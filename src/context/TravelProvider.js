@@ -1,16 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import PropTypes from 'prop-types';
 import fetchCurrencies from '../api/CurrenciesApi';
 import TravelContext from "./TravelContext";
 
 function TravelProvider({ children }) {
-  const [currencies, setCurrencies] = useState([]);
   const [what, setWhat] = useState("");
   const [where, setWhere] = useState("");
   const [when, setWhen] = useState("date");
   const [originalPrice, setOriginalPrice] = useState(24);
   const [originalCurrency, setOriginalCurrency] = useState("");
-  const [convertionRate, setConversionRate] = useState(5);
+  
+  const [currencies, setCurrencies] = useState([]);
+  const [conversionRate, setConversionRate] = useState(5);
   const [expenses, setExpenses] = useState([]);
   const [total, setTotal] = useState(2500);
 
@@ -19,11 +20,6 @@ function TravelProvider({ children }) {
     console.log(currenciesData);
     setCurrencies(currenciesData);
   }
-
-  useEffect(() => {
-    getCurrencies();
-    // eslint-disable-next-line
-  }, []);
 
   const contextValue = {
     getCurrencies,
@@ -39,7 +35,7 @@ function TravelProvider({ children }) {
     setOriginalPrice,
     originalCurrency,
     setOriginalCurrency,
-    convertionRate, setConversionRate,
+    conversionRate, setConversionRate,
     expenses,
     setExpenses,
     total,
