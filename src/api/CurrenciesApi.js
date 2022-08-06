@@ -2,7 +2,7 @@ const CURRENCIES_API_URL = 'https://economia.awesomeapi.com.br/json/all';
 
 async function fetchCurrencies() {
   const response = await fetch(CURRENCIES_API_URL);
-  const data = response.json();
+  const data = await response.json();
   delete data.USDT;
   delete data.BTC;
   delete data.LTC;
@@ -10,7 +10,7 @@ async function fetchCurrencies() {
   delete data.XRP;
   delete data.DOGE;
 
-  return data;
+  return Array(data);
 }
 
 export default fetchCurrencies;
