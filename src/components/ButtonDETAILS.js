@@ -7,6 +7,7 @@ function ButtonDETAILS() {
   const { setDetailedExpense } = useContext(TravelContext);
 
   const handleDETAILS = ({ expense }) => {
+    console.log(expense);
     setDetailedExpense(expense);
     navigate('/details');
   };
