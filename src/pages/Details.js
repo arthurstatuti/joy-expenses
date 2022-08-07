@@ -5,7 +5,7 @@ function Details() {
   return (
     <div>
       <Header />
-      <h1> I am Details </h1>
+      <h2> EXPENSE DETAILS </h2>
     </div>
   )
 }
