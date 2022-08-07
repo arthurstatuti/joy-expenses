@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import TravelContext from "../context/TravelContext";
@@ -22,6 +23,21 @@ function ButtonDETAILS({ expense }) {
       </button>
     </div>
   );
+}
+
+ButtonDETAILS.propTypes = {
+  expense: PropTypes.shape({
+    "id": PropTypes.number,
+    "what": PropTypes.string,
+    "where": PropTypes.string,
+    "day": PropTypes.string,
+    "month": PropTypes.string,
+    "year": PropTypes.string,
+    "currency": PropTypes.string,
+    "price": PropTypes.string,
+    "rate": PropTypes.number,
+    "newPrice": PropTypes.number,
+  }),
 }
 
 export default ButtonDETAILS;
