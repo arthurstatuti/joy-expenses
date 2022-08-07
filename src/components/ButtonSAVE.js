@@ -20,7 +20,7 @@ function ButtonSAVE() {
     currency,
     setCurrency,
     rate,
-    setRate,
+    setRate
   } = useContext(TravelContext);
 
   const [disabled, setDisabled] = useState(true);
@@ -37,7 +37,7 @@ function ButtonSAVE() {
     toggleButtonSAVE(); // eslint-disable-next-line
   }, [what, where, day, month, year, price, currency]);
 
-  function handleSave() {
+  function handleSAVE() {
     setExpenses(
       [...expenses, {
         "id": Math.random(),
@@ -76,7 +76,7 @@ function ButtonSAVE() {
         id="button-save"
         type="button"
         disabled={disabled}
-        onClick={handleSave}
+        onClick={handleSAVE}
       >
         SAVE
       </button>
