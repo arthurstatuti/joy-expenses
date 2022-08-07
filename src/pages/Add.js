@@ -3,13 +3,16 @@ import ButtonBACK from "../components/ButtonBACK";
 import ButtonSAVE from "../components/ButtonSAVE";
 import Header from "../components/Header";
 import TravelContext from "../context/TravelContext";
+import months from "../data/months";
 
 function Add() {
   const {
     currenciesData,
     setWhat,
     setWhere,
-    setWhen,
+    setDay,
+    setMonth,
+    setYear,
     setPrice,
     setCurrency,
     setRate,
@@ -55,11 +58,26 @@ function Add() {
         </input>
         <br></br>
 
-        <label htmlFor="when"> WHEN </label>
+        <h4> WHEN </h4>
         <input
-          id="when"
-          type="text"
-          onChange={(event) => setWhen(event.target.value)}
+          id="day"
+          type="number"
+          placeholder="DAY"
+          onChange={(event) => setDay(event.target.value)}
+        >
+        </input>
+        <select
+          id="month"
+          onChange={(event) => setMonth(event.target.value)}
+        >
+          <option></option>
+          {months.map(month => <option key={month}>{month}</option>)}
+        </select>
+        <input
+          id="year"
+          type="number"
+          placeholder="YEAR"
+          onChange={(event) => setYear(event.target.value)}
         >
         </input>
         <br></br>
@@ -67,7 +85,7 @@ function Add() {
         <label htmlFor="price"> PRICE </label>
         <input
           id="price"
-          type="text"
+          type="number"
           onChange={(event) => setPrice(event.target.value)}
         >
         </input>
@@ -79,9 +97,7 @@ function Add() {
           onChange={setCurrencyAndSetRate}
         >
           <option></option>
-          {
-            currencies.map(currency => <option key={currency}> {currency} </option>)
-          }
+          {currencies.map(currency => <option key={currency}> {currency} </option>)}
         </select>
 
       </form>

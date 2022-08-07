@@ -9,8 +9,12 @@ function ButtonSAVE() {
     setWhat,
     where,
     setWhere,
-    when,
-    setWhen,
+    day,
+    setDay,
+    month,
+    setMonth,
+    year,
+    setYear,
     price,
     setPrice,
     currency,
@@ -22,7 +26,7 @@ function ButtonSAVE() {
   const [disabled, setDisabled] = useState(true);
 
   function toggleButtonSAVE() {
-    if (what !== '' && where !== '' && when !== '' && price !== '' && currency !== '') {
+    if (what !== '' && where !== '' && day !== '' && month !== '' && year !== '' && price !== '' && currency !== '') {
       setDisabled(false);
       return;
     }
@@ -31,14 +35,16 @@ function ButtonSAVE() {
 
   useEffect(() => {
     toggleButtonSAVE(); // eslint-disable-next-line
-  }, [what, where, when, price, currency]);
+  }, [what, where, day, month, year, price, currency]);
 
   function handleSave() {
     setExpenses(
       [...expenses, {
         "what": what,
         "where": where,
-        "when": when,
+        "day": day,
+        "month": month,
+        "year": year,
         "price": price,
         "currency": currency,
         "rate": rate,
@@ -47,13 +53,17 @@ function ButtonSAVE() {
     );
     setWhat("");
     setWhere("");
-    setWhen("");
+    setDay("");
+    setMonth("");
+    setYear("");
     setPrice("");
     setCurrency("");
     setRate("rate");
     document.getElementById("what").value = "";
     document.getElementById("where").value = "";
-    document.getElementById("when").value = "";
+    document.getElementById("day").value = "";
+    document.getElementById("month").value = "";
+    document.getElementById("year").value = "";
     document.getElementById("price").value = "";
     document.getElementById("currency").value = "";
   }
