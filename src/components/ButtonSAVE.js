@@ -40,6 +40,7 @@ function ButtonSAVE() {
   function handleSave() {
     setExpenses(
       [...expenses, {
+        "id": Math.random(),
         "what": what,
         "where": where,
         "day": day,
