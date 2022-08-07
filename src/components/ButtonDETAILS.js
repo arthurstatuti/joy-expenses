@@ -2,12 +2,11 @@ import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import TravelContext from "../context/TravelContext";
 
-function ButtonDETAILS() {
+function ButtonDETAILS({ expense }) {
   const navigate = useNavigate();
   const { setDetailedExpense } = useContext(TravelContext);
 
-  const handleDETAILS = ({ expense }) => {
-    console.log(expense);
+  const handleDETAILS = () => {
     setDetailedExpense(expense);
     navigate('/details');
   };
