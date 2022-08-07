@@ -13,7 +13,6 @@ function TravelProvider({ children }) {
   const [currency, setCurrency] = useState("");
   const [rate, setRate] = useState("rate");
   const [expenses, setExpenses] = useState([]);
-  const [total, setTotal] = useState("total");
   const [currenciesData, setCurrenciesData] = useState(["currenciesData"]);
 
   async function getCurrenciesData() {
@@ -51,8 +50,6 @@ function TravelProvider({ children }) {
     setRate,
     expenses,
     setExpenses,
-    total,
-    setTotal
   }
 
   return (

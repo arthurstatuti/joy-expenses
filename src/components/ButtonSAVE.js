@@ -59,6 +59,7 @@ function ButtonSAVE() {
     setPrice("");
     setCurrency("");
     setRate("rate");
+
     document.getElementById("what").value = "";
     document.getElementById("where").value = "";
     document.getElementById("day").value = "";
