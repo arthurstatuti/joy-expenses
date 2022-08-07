@@ -11,7 +11,7 @@ function ButtonSETTINGS() {
         type="button"
         onClick={() => navigate('/settings')}
       >
-        SET
+        SETTINGS
       </button>
     </div>
   );

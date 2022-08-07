@@ -18,11 +18,17 @@ function Add() {
   } = useContext(TravelContext);
 
   const currencies = Object.keys(currenciesData[0]);
+  currencies.push("");
+  currencies.push("BRL");
+  const sortedCurrencies = currencies.sort();
 
   function setCurrencyAndSetRate({ target: { value } }) {
     if (value === '') {
       setCurrency("");
       setRate("rate");
+    } else if (value === "BRL") {
+      setCurrency("BRL");
+      setRate(1);
     } else {
       setCurrency(value);
       const rate = parseFloat(currenciesData[0][value].ask);
@@ -95,8 +101,7 @@ function Add() {
           id="currency"
           onChange={setCurrencyAndSetRate}
         >
-          <option></option>
-          {currencies.map(currency => <option key={currency}> {currency} </option>)}
+          {sortedCurrencies.map(currency => <option key={currency}> {currency} </option>)}
         </select>
         <p></p>
 

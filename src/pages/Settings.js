@@ -13,6 +13,7 @@ function Settings() {
       <p>
         ARS : Argentine Peso <br />
         AUD : Australian Dollar <br />
+        BRL : Brazilian Real <br />
         CAD : Canadian Dollar <br />
         CHF : Swiss Franc <br />
         CNY : Chinese Yuan <br />
