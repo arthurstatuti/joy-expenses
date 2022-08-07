@@ -21,7 +21,7 @@ function ButtonSAVE() {
 
   const [disabled, setDisabled] = useState(true);
 
-  function disableButtonSAVE() {
+  function toggleButtonSAVE() {
     if (what !== '' && where !== '' && when !== '' && price !== '' && currency !== '') {
       setDisabled(false);
       return;
@@ -30,7 +30,7 @@ function ButtonSAVE() {
   };
 
   useEffect(() => {
-    disableButtonSAVE(); // eslint-disable-next-line
+    toggleButtonSAVE(); // eslint-disable-next-line
   }, [what, where, when, price, currency]);
 
   function handleSave() {
