@@ -1,48 +1,48 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from 'prop-types';
-import fetchCurrencies from '../api/CurrenciesApi';
+import fetchCurrenciesData from '../api/CurrenciesDataApi';
 import TravelContext from "./TravelContext";
 
 function TravelProvider({ children }) {
   const [what, setWhat] = useState("");
   const [where, setWhere] = useState("");
-  const [when, setWhen] = useState("date");
-  const [originalPrice, setOriginalPrice] = useState(parseFloat(24).toFixed(2));
-  const [originalCurrency, setOriginalCurrency] = useState("");
-
-  const [currencies, setCurrencies] = useState("initial");
-  const [conversionRate, setConversionRate] = useState(parseFloat(5).toFixed(2));
+  const [when, setWhen] = useState("");
+  const [price, setPrice] = useState("");
+  const [currency, setCurrency] = useState("");
+  const [rate, setRate] = useState("rate");
   const [expenses, setExpenses] = useState([]);
-  const [total, setTotal] = useState(parseFloat(2500).toFixed(2));
+  const [total, setTotal] = useState("total");
+  const [currenciesData, setCurrenciesData] = useState(["currenciesData"]);
 
-  async function getCurrencies() {
-    const currenciesData = await fetchCurrencies();
-    setCurrencies(currenciesData);
+  async function getCurrenciesData() {
+    const currenciesData = await fetchCurrenciesData();
+    setCurrenciesData(currenciesData);
   }
 
   useEffect(() => {
-    getCurrencies(); // eslint-disable-next-line
+    getCurrenciesData(); // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
-    console.log(currencies);
-  }, [currencies]);
+    console.log(currenciesData);
+  }, [currenciesData]);
 
   const contextValue = {
-    getCurrencies,
-    currencies,
-    setCurrencies,
+    getCurrenciesData,
+    currenciesData,
+    setCurrenciesData,
     what,
     setWhat,
     where,
     setWhere,
     when,
     setWhen,
-    originalPrice,
-    setOriginalPrice,
-    originalCurrency,
-    setOriginalCurrency,
-    conversionRate, setConversionRate,
+    price,
+    setPrice,
+    currency,
+    setCurrency,
+    rate,
+    setRate,
     expenses,
     setExpenses,
     total,
