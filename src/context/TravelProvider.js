@@ -12,6 +12,7 @@ function TravelProvider({ children }) {
   const [price, setPrice] = useState("");
   const [currency, setCurrency] = useState("");
   const [rate, setRate] = useState("rate");
+  const [detailedExpense, setDetailedExpense] = useState("detailedExpense");
   const [expenses, setExpenses] = useState([]);
   const [currenciesData, setCurrenciesData] = useState(["currenciesData"]);
 
@@ -48,8 +49,10 @@ function TravelProvider({ children }) {
     setCurrency,
     rate,
     setRate,
+    detailedExpense,
+    setDetailedExpense,
     expenses,
-    setExpenses,
+    setExpenses
   }
 
   return (

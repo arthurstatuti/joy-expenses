@@ -6,7 +6,7 @@ function CardExpenseRow({ expense }) {
     <div>
       <span> {`R$ ${parseFloat(expense.newPrice).toFixed(2)}`} </span>
       <span> {`${expense.day}/${expense.month}/${expense.year}`} </span>
-      <ButtonDETAILS />
+      <ButtonDETAILS expense={expense} />
     </div>
   )
 }

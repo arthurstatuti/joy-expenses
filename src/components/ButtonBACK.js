@@ -12,7 +12,8 @@ function ButtonBACK() {
     setYear,
     setPrice,
     setCurrency,
-    setRate
+    setRate,
+    setDetailedExpense
   } = useContext(TravelContext);
 
   function handleBACK() {
@@ -24,6 +25,7 @@ function ButtonBACK() {
     setPrice("");
     setCurrency("");
     setRate("rate");
+    setDetailedExpense("detailedExpense");
     navigate('/');
   }
 
