@@ -3,7 +3,6 @@ import ButtonBACK from "../components/ButtonBACK";
 import ButtonSAVE from "../components/ButtonSAVE";
 import Header from "../components/Header";
 import TravelContext from "../context/TravelContext";
-import months from "../data/months";
 
 function Add() {
   const {
@@ -58,7 +57,7 @@ function Add() {
         </input>
         <br></br>
 
-        <h4> WHEN </h4>
+        <label htmlFor="day"> WHEN </label>
         <input
           id="day"
           type="number"
@@ -66,13 +65,13 @@ function Add() {
           onChange={(event) => setDay(event.target.value)}
         >
         </input>
-        <select
+        <input
           id="month"
+          type="number"
+          placeholder="MONTH"
           onChange={(event) => setMonth(event.target.value)}
         >
-          <option></option>
-          {months.map(month => <option key={month}>{month}</option>)}
-        </select>
+        </input>
         <input
           id="year"
           type="number"
