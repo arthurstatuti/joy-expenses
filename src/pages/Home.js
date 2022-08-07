@@ -1,15 +1,7 @@
-import React, { useContext, useEffect } from "react";
+import React from "react";
 import Header from "../components/Header";
-import TravelContext from "../context/TravelContext";
 
-
-function Home() { // eslint-disable-next-line
-  const { getCurrencies } = useContext(TravelContext);
-
-  useEffect(() => {
-    getCurrencies(); // eslint-disable-next-line
-  }, []);
-
+function Home() {
   return (
     <div>
       <Header />
