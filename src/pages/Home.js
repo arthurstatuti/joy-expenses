@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from "react";
+import Header from "../components/Header";
 import TravelContext from "../context/TravelContext";
 
 
@@ -11,6 +12,7 @@ function Home() { // eslint-disable-next-line
 
   return (
     <div>
+      <Header />
       <h1> I am Home </h1>
     </div>
   )
