@@ -46,7 +46,7 @@ function Add() {
           onChange={(event) => setWhat(event.target.value)}
         >
         </input>
-        <br></br>
+        <p></p>
 
         <label htmlFor="where"> WHERE </label>
         <input
@@ -55,7 +55,7 @@ function Add() {
           onChange={(event) => setWhere(event.target.value)}
         >
         </input>
-        <br></br>
+        <p></p>
 
         <label htmlFor="day"> WHEN </label>
         <input
@@ -79,7 +79,7 @@ function Add() {
           onChange={(event) => setYear(event.target.value)}
         >
         </input>
-        <br></br>
+        <p></p>
 
         <label htmlFor="price"> PRICE </label>
         <input
@@ -88,7 +88,7 @@ function Add() {
           onChange={(event) => setPrice(event.target.value)}
         >
         </input>
-        <br></br>
+        <p></p>
 
         <label htmlFor="currency"> CURRENCY </label>
         <select
@@ -98,6 +98,7 @@ function Add() {
           <option></option>
           {currencies.map(currency => <option key={currency}> {currency} </option>)}
         </select>
+        <p></p>
 
       </form>
 

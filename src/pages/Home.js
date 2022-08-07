@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import Header from "../components/Header";
 import ButtonADD from "../components/ButtonADD";
+import ButtonSETTINGS from "../components/ButtonSETTINGS";
 import CardExpenseRow from "../components/CardExpenseRow";
 import TravelContext from "../context/TravelContext";
 
@@ -11,6 +12,7 @@ function Home() {
     return (
       <div>
         <Header />
+        <ButtonSETTINGS />
         <ButtonADD />
         <h3> "You have no expenses" </h3>
       </div>
@@ -19,6 +21,7 @@ function Home() {
     return (
       <div>
         <Header />
+        <ButtonSETTINGS />
         <ButtonADD />
         {expenses.map(expense => <CardExpenseRow key={expense.id} expense={expense} />)}
       </div>
