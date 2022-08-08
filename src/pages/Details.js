@@ -38,7 +38,7 @@ function Details() {
         <p></p>
 
         <span> {`R$ ${parseFloat(detailedExpense.newPrice).toFixed(2)}`} </span>
-        <span> {`${detailedExpense.day}/${detailedExpense.month}/${detailedExpense.year}`} </span>
+        <span> {`${detailedExpense.date}`} </span>
 
         <p>
           {`Original Price ${detailedExpense.price}`} <br />

@@ -9,9 +9,7 @@ function Add() {
     currenciesData,
     setWhat,
     setWhere,
-    setDay,
-    setMonth,
-    setYear,
+    setDate,
     setPrice,
     setCurrency,
     setRate,
@@ -69,26 +67,11 @@ function Add() {
           </input>
           <p></p>
 
-          <label htmlFor="day"> WHEN </label>
+          <label htmlFor="date"> DATE </label>
           <input
-            id="day"
-            type="number"
-            placeholder="DAY"
-            onChange={(event) => setDay(event.target.value)}
-          >
-          </input>
-          <input
-            id="month"
-            type="number"
-            placeholder="MONTH"
-            onChange={(event) => setMonth(event.target.value)}
-          >
-          </input>
-          <input
-            id="year"
-            type="number"
-            placeholder="YEAR"
-            onChange={(event) => setYear(event.target.value)}
+            id="date"
+            type="date"
+            onChange={(event) => setDate(event.target.value)}
           >
           </input>
           <p></p>

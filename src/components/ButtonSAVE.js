@@ -11,12 +11,8 @@ function ButtonSAVE() {
     setWhat,
     where,
     setWhere,
-    day,
-    setDay,
-    month,
-    setMonth,
-    year,
-    setYear,
+    date,
+    setDate,
     price,
     setPrice,
     currency,
@@ -31,9 +27,7 @@ function ButtonSAVE() {
         "id": Math.random().toFixed(4),
         "what": what,
         "where": where,
-        "day": day,
-        "month": month,
-        "year": year,
+        "date": date,
         "price": price,
         "currency": currency,
         "rate": rate,
@@ -43,24 +37,20 @@ function ButtonSAVE() {
 
     setWhat("");
     setWhere("");
-    setDay("");
-    setMonth("");
-    setYear("");
+    setDate("");
     setPrice("");
     setCurrency("");
     setRate(0);
 
     document.getElementById("what").value = "";
     document.getElementById("where").value = "";
-    document.getElementById("day").value = "";
-    document.getElementById("month").value = "";
-    document.getElementById("year").value = "";
+    document.getElementById("date").value = "";
     document.getElementById("price").value = "";
     document.getElementById("currency").value = "";
   }
 
   function toggleButtonSAVE() {
-    if (what !== '' && where !== '' && day !== '' && month !== '' && year !== '' && price !== '' && currency !== '') {
+    if (what !== '' && where !== '' && date !== '' && price !== '' && currency !== '') {
       setDisabled(false);
       return;
     }
@@ -70,7 +60,7 @@ function ButtonSAVE() {
   useEffect(() => {
     toggleButtonSAVE();
     // eslint-disable-next-line
-  }, [what, where, day, month, year, price, currency]);
+  }, [what, where, date, price, currency]);
 
   useEffect(() => {
     localStorage.setItem('expenses', JSON.stringify(expenses));

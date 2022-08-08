@@ -7,9 +7,10 @@ function ButtonBACK() {
   const {
     setWhat,
     setWhere,
-    setDay,
-    setMonth,
-    setYear,
+    setDate,
+    // setDay,
+    // setMonth,
+    // setYear,
     setPrice,
     setCurrency,
     setRate,
@@ -21,9 +22,10 @@ function ButtonBACK() {
 
     setWhat("");
     setWhere("");
-    setDay("");
-    setMonth("");
-    setYear("");
+    setDate("");
+    // setDay("");
+    // setMonth("");
+    // setYear("");
     setPrice("");
     setCurrency("");
     setRate(0);
