@@ -11,7 +11,12 @@ function Home() {
   useEffect(() => {
     const lcStExpenses = JSON.parse(localStorage.getItem('expenses'));
     if (lcStExpenses) {
-      setExpenses(lcStExpenses);
+      const expensesByDate = [...lcStExpenses].sort((a, b) => {
+        const c = new Date(a.date);
+        const d = new Date(b.date);
+        return d - c;
+      });
+      setExpenses(expensesByDate);
     }
     // eslint-disable-next-line
   }, []);
