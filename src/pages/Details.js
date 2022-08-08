@@ -27,6 +27,7 @@ function Details() {
     return (
       <div>
         <Header />
+
         <h2> EXPENSE DETAILS </h2>
 
         <h3> WHAT </h3>

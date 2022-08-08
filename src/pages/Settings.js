@@ -7,9 +7,11 @@ function Settings() {
   return (
     <div>
       <Header />
+
       <h2> SETTINGS </h2>
 
       <h4> CURRENCIES AVAILABLE </h4>
+
       <p>
         ARS : Argentine Peso <br />
         AUD : Australian Dollar <br />
@@ -25,6 +27,7 @@ function Settings() {
       </p>
 
       <h4> CAREFUL! </h4>
+
       <h4> CLEAN ALL EXPENSES </h4>
 
       <ButtonCLEAN />
