@@ -1,17 +1,17 @@
-import React, { useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useContext, useEffect } from "react";
 import TravelContext from "../context/TravelContext";
 
 function ButtonDELETE() {
-  const navigate = useNavigate();
-  const { detailedExpense, setDetailedExpense, expenses, setExpenses } = useContext(TravelContext);
+  const { detailedExpense, expenses, setExpenses } = useContext(TravelContext);
 
   function handleDELETE() {
     const newExpenses = expenses.filter(expense => expense.id !== detailedExpense.id);
     setExpenses(newExpenses);
-    setDetailedExpense("detailedExpense");
-    navigate('/');
   }
+
+  useEffect(() => {
+    localStorage.setItem('expenses', JSON.stringify(expenses));
+  }, [expenses]);
 
   return (
     <div>

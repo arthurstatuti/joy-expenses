@@ -24,8 +24,8 @@ function ButtonBACK() {
     setYear("");
     setPrice("");
     setCurrency("");
-    setRate("rate");
-    setDetailedExpense("detailedExpense");
+    setRate(0);
+    setDetailedExpense([]);
     navigate('/');
   }
 

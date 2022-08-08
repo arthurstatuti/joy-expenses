@@ -17,11 +17,6 @@ function Add() {
     setRate,
   } = useContext(TravelContext);
 
-  const currencies = Object.keys(currenciesData[0]);
-  currencies.push("");
-  currencies.push("BRL");
-  const sortedCurrencies = currencies.sort();
-
   function setCurrencyAndSetRate({ target: { value } }) {
     if (value === '') {
       setCurrency("");
@@ -34,84 +29,96 @@ function Add() {
       const rate = parseFloat(currenciesData[0][value].ask);
       setRate(rate);
     }
-
   }
 
-  return (
-    <div>
-      <Header />
+  if (currenciesData.length === 0) {
+    return (
+      "loading..."
+    )
+  } else {
+    const currencyKeys = Object.keys(currenciesData[0]);
+    currencyKeys.push("");
+    currencyKeys.push("BRL");
 
-      <h2> ADD NEW EXPENSE</h2>
+    const sortedCurrencyKeys = [...currencyKeys].sort();
+    const currencies = sortedCurrencyKeys;
 
-      <form>
+    return (
+      <div>
+        <Header />
 
-        <label htmlFor="what"> WHAT </label>
-        <input
-          id="what"
-          type="text"
-          onChange={(event) => setWhat(event.target.value)}
-        >
-        </input>
-        <p></p>
+        <h2> ADD NEW EXPENSE</h2>
 
-        <label htmlFor="where"> WHERE </label>
-        <input
-          id="where"
-          type="text"
-          onChange={(event) => setWhere(event.target.value)}
-        >
-        </input>
-        <p></p>
+        <form>
 
-        <label htmlFor="day"> WHEN </label>
-        <input
-          id="day"
-          type="number"
-          placeholder="DAY"
-          onChange={(event) => setDay(event.target.value)}
-        >
-        </input>
-        <input
-          id="month"
-          type="number"
-          placeholder="MONTH"
-          onChange={(event) => setMonth(event.target.value)}
-        >
-        </input>
-        <input
-          id="year"
-          type="number"
-          placeholder="YEAR"
-          onChange={(event) => setYear(event.target.value)}
-        >
-        </input>
-        <p></p>
+          <label htmlFor="what"> WHAT </label>
+          <input
+            id="what"
+            type="text"
+            onChange={(event) => setWhat(event.target.value)}
+          >
+          </input>
+          <p></p>
 
-        <label htmlFor="price"> PRICE </label>
-        <input
-          id="price"
-          type="number"
-          onChange={(event) => setPrice(event.target.value)}
-        >
-        </input>
-        <p></p>
+          <label htmlFor="where"> WHERE </label>
+          <input
+            id="where"
+            type="text"
+            onChange={(event) => setWhere(event.target.value)}
+          >
+          </input>
+          <p></p>
 
-        <label htmlFor="currency"> CURRENCY </label>
-        <select
-          id="currency"
-          onChange={setCurrencyAndSetRate}
-        >
-          {sortedCurrencies.map(currency => <option key={currency}> {currency} </option>)}
-        </select>
-        <p></p>
+          <label htmlFor="day"> WHEN </label>
+          <input
+            id="day"
+            type="number"
+            placeholder="DAY"
+            onChange={(event) => setDay(event.target.value)}
+          >
+          </input>
+          <input
+            id="month"
+            type="number"
+            placeholder="MONTH"
+            onChange={(event) => setMonth(event.target.value)}
+          >
+          </input>
+          <input
+            id="year"
+            type="number"
+            placeholder="YEAR"
+            onChange={(event) => setYear(event.target.value)}
+          >
+          </input>
+          <p></p>
 
-      </form>
+          <label htmlFor="price"> PRICE </label>
+          <input
+            id="price"
+            type="number"
+            onChange={(event) => setPrice(event.target.value)}
+          >
+          </input>
+          <p></p>
 
-      <ButtonSAVE />
+          <label htmlFor="currency"> CURRENCY </label>
+          <select
+            id="currency"
+            onChange={setCurrencyAndSetRate}
+          >
+            {currencies.map(currency => <option key={currency}> {currency} </option>)}
+          </select>
+          <p></p>
 
-      <ButtonBACK />
-    </div>
-  )
+        </form>
+
+        <ButtonSAVE />
+
+        <ButtonBACK />
+      </div>
+    )
+  }
 }
 
 export default Add;

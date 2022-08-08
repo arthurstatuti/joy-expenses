@@ -27,7 +27,7 @@ function ButtonDETAILS({ expense }) {
 
 ButtonDETAILS.propTypes = {
   expense: PropTypes.shape({
-    "id": PropTypes.number,
+    "id": PropTypes.string,
     "what": PropTypes.string,
     "where": PropTypes.string,
     "day": PropTypes.string,

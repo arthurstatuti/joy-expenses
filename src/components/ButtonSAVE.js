@@ -2,6 +2,8 @@ import React, { useContext, useEffect, useState } from "react";
 import TravelContext from "../context/TravelContext";
 
 function ButtonSAVE() {
+  const [disabled, setDisabled] = useState(true);
+
   const {
     expenses,
     setExpenses,
@@ -23,24 +25,10 @@ function ButtonSAVE() {
     setRate
   } = useContext(TravelContext);
 
-  const [disabled, setDisabled] = useState(true);
-
-  function toggleButtonSAVE() {
-    if (what !== '' && where !== '' && day !== '' && month !== '' && year !== '' && price !== '' && currency !== '') {
-      setDisabled(false);
-      return;
-    }
-    setDisabled(true);
-  };
-
-  useEffect(() => {
-    toggleButtonSAVE(); // eslint-disable-next-line
-  }, [what, where, day, month, year, price, currency]);
-
   function handleSAVE() {
     setExpenses(
       [...expenses, {
-        "id": Math.random(),
+        "id": Math.random().toFixed(4),
         "what": what,
         "where": where,
         "day": day,
@@ -52,6 +40,7 @@ function ButtonSAVE() {
         "newPrice": price * rate
       }]
     );
+
     setWhat("");
     setWhere("");
     setDay("");
@@ -59,7 +48,7 @@ function ButtonSAVE() {
     setYear("");
     setPrice("");
     setCurrency("");
-    setRate("rate");
+    setRate(0);
 
     document.getElementById("what").value = "";
     document.getElementById("where").value = "";
@@ -69,6 +58,23 @@ function ButtonSAVE() {
     document.getElementById("price").value = "";
     document.getElementById("currency").value = "";
   }
+
+  function toggleButtonSAVE() {
+    if (what !== '' && where !== '' && day !== '' && month !== '' && year !== '' && price !== '' && currency !== '') {
+      setDisabled(false);
+      return;
+    }
+    setDisabled(true);
+  };
+
+  useEffect(() => {
+    toggleButtonSAVE();
+    // eslint-disable-next-line
+  }, [what, where, day, month, year, price, currency]);
+
+  useEffect(() => {
+    localStorage.setItem('expenses', JSON.stringify(expenses));
+  }, [expenses]);
 
   return (
     <div>

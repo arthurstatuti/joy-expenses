@@ -11,10 +11,10 @@ function TravelProvider({ children }) {
   const [year, setYear] = useState("");
   const [price, setPrice] = useState("");
   const [currency, setCurrency] = useState("");
-  const [rate, setRate] = useState("rate");
-  const [detailedExpense, setDetailedExpense] = useState("detailedExpense");
-  const [expenses, setExpenses] = useState([]);
-  const [currenciesData, setCurrenciesData] = useState(["currenciesData"]);
+  const [rate, setRate] = useState(0);
+  const [detailedExpense, setDetailedExpense] = useState([]);
+  const [expenses, setExpenses] = useState(JSON.parse(localStorage.getItem('expenses')) ? JSON.parse(localStorage.getItem('expenses')) : []);
+  const [currenciesData, setCurrenciesData] = useState([]);
 
   async function getCurrenciesData() {
     const currenciesData = await fetchCurrenciesData();
@@ -22,7 +22,8 @@ function TravelProvider({ children }) {
   }
 
   useEffect(() => {
-    getCurrenciesData(); // eslint-disable-next-line
+    getCurrenciesData();
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {

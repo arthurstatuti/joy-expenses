@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import ButtonDETAILS from "../components/ButtonDETAILS";
 
 function CardExpenseRow({ expense }) {
-  console.log(expense);
   return (
     <div>
       <span> {`R$ ${parseFloat(expense.newPrice).toFixed(2)}`} </span>
@@ -15,7 +14,7 @@ function CardExpenseRow({ expense }) {
 
 CardExpenseRow.propTypes = {
   expense: PropTypes.shape({
-    "id": PropTypes.number,
+    "id": PropTypes.string,
     "what": PropTypes.string,
     "where": PropTypes.string,
     "day": PropTypes.string,
