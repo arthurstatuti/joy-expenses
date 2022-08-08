@@ -34,9 +34,19 @@ function Home() {
     return (
       <div>
         <Header />
-        <ButtonSETTINGS />
-        <ButtonADD />
-        {expenses.map(expense => <CardExpenseRow key={expense.id} expense={expense} />)}
+
+        <div>
+          <ButtonSETTINGS />
+        </div>
+
+        <div>
+          <ButtonADD />
+        </div>
+
+        <div>
+          {expenses.map(expense => <CardExpenseRow key={expense.id} expense={expense} />)}
+        </div>
+
       </div>
     )
 

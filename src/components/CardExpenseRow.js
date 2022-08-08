@@ -5,9 +5,19 @@ import ButtonDETAILS from "../components/ButtonDETAILS";
 function CardExpenseRow({ expense }) {
   return (
     <div>
-      <span> {`R$ ${parseFloat(expense.newPrice).toFixed(2)}`} </span>
-      <span> {`${expense.date}`} </span>
-      <ButtonDETAILS expense={expense} />
+
+      <div>
+        {`R$ ${parseFloat(expense.newPrice).toFixed(2)}`}
+      </div>
+
+      <div>
+        {`${expense.date}`}
+      </div>
+
+      <div>
+        <ButtonDETAILS expense={expense} />
+      </div>
+
     </div>
   )
 }
