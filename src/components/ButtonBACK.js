@@ -17,6 +17,8 @@ function ButtonBACK() {
   } = useContext(TravelContext);
 
   function handleBACK() {
+    localStorage.setItem('detailedExpense', JSON.stringify([]));
+
     setWhat("");
     setWhere("");
     setDay("");

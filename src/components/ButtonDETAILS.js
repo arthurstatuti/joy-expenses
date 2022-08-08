@@ -8,6 +8,7 @@ function ButtonDETAILS({ expense }) {
   const { setDetailedExpense } = useContext(TravelContext);
 
   const handleDETAILS = () => {
+    localStorage.setItem('detailedExpense', JSON.stringify(expense));
     setDetailedExpense(expense);
     navigate('/details');
   };

@@ -1,11 +1,19 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import Header from "../components/Header";
 import ButtonDELETE from "../components/ButtonDELETE";
 import ButtonBACK from "../components/ButtonBACK";
 import TravelContext from "../context/TravelContext";
 
 function Details() {
-  const { detailedExpense } = useContext(TravelContext);
+  const { detailedExpense, setDetailedExpense } = useContext(TravelContext);
+
+  useEffect(() => {
+    const lcStDetExpense = JSON.parse(localStorage.getItem('detailedExpense'));
+    if (lcStDetExpense) {
+      setDetailedExpense(lcStDetExpense);
+    }
+    // eslint-disable-next-line
+  }, []);
 
   if (detailedExpense.length === 0) {
     return (

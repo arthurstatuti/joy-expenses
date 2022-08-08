@@ -12,7 +12,7 @@ function TravelProvider({ children }) {
   const [price, setPrice] = useState("");
   const [currency, setCurrency] = useState("");
   const [rate, setRate] = useState(0);
-  const [detailedExpense, setDetailedExpense] = useState([]);
+  const [detailedExpense, setDetailedExpense] = useState(JSON.parse(localStorage.getItem('detailedExpense')) ? JSON.parse(localStorage.getItem('detailedExpense')) : []);
   const [expenses, setExpenses] = useState(JSON.parse(localStorage.getItem('expenses')) ? JSON.parse(localStorage.getItem('expenses')) : []);
   const [currenciesData, setCurrenciesData] = useState([]);
 

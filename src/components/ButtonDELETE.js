@@ -5,6 +5,7 @@ function ButtonDELETE() {
   const { detailedExpense, expenses, setExpenses } = useContext(TravelContext);
 
   function handleDELETE() {
+    localStorage.setItem('detailedExpense', JSON.stringify([]));
     const newExpenses = expenses.filter(expense => expense.id !== detailedExpense.id);
     setExpenses(newExpenses);
   }
