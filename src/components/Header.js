@@ -8,9 +8,9 @@ function Header() {
   }, 0);
 
   return (
-    <div>
+    <div className="flex justify-between m-4">
       <h1> TRAVEL EXPENSES </h1>
-      <h3> TOTAL: R$ {parseFloat(total).toFixed(2)} </h3>
+      <h3> R$ {parseFloat(total).toFixed(2)} </h3>
     </div>
 
   );
