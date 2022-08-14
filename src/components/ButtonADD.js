@@ -7,6 +7,7 @@ function ButtonADD() {
   return (
     <div>
       <button
+        className="border border-gray-500 rounded p-5"
         id="button-add"
         type="button"
         onClick={() => navigate('/add')}

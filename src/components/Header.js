@@ -8,7 +8,7 @@ function Header() {
   }, 0);
 
   return (
-    <div className="flex justify-between m-4">
+    <div className="flex justify-between border border-gray-500 rounded p-5">
       <h1> TRAVEL EXPENSES </h1>
       <h3> R$ {parseFloat(total).toFixed(2)} </h3>
     </div>

@@ -24,29 +24,28 @@ function Home() {
   if (expenses.length === 0) {
     return (
       <div>
-        <Header />
-        <ButtonSETTINGS />
-        <ButtonADD />
-        <h3> "You have no expenses" </h3>
+
+        <div className=" m-2"> <Header /> </div>
+
+        <main>
+          <div className="flex justify-between">
+            <div className=" m-2"> <ButtonSETTINGS /> </div>
+            <div className=" m-2"> <ButtonADD /> </div>
+          </div>
+          <h3 className=" flex justify-center m-10 text-xl">
+            You have no expenses
+          </h3>
+        </main >
+
       </div>
     )
   } else {
     return (
       <div>
         <Header />
-
-        <div>
-          <ButtonSETTINGS />
-        </div>
-
-        <div>
-          <ButtonADD />
-        </div>
-
-        <div>
-          {expenses.map(expense => <CardExpenseRow key={expense.id} expense={expense} />)}
-        </div>
-
+        <ButtonSETTINGS />
+        <ButtonADD />
+        {expenses.map(expense => <CardExpenseRow key={expense.id} expense={expense} />)}
       </div>
     )
 
