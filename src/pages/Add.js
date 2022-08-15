@@ -45,7 +45,7 @@ function Add() {
       <div>
         <Header />
 
-        <h2> ADD NEW EXPENSE</h2>
+        <h2 className=" text-gray-700 bg-gray-100 border-b border-red-300 flex justify-center p-4 font-bold"> ADD NEW EXPENSE</h2>
 
         <form>
 
@@ -96,9 +96,11 @@ function Add() {
 
         </form>
 
-        <ButtonSAVE />
+        <div className="flex justify-evenly mx-12 my-4">
+          <ButtonSAVE />
+          <ButtonBACK />
+        </div>
 
-        <ButtonBACK />
       </div>
     )
   }

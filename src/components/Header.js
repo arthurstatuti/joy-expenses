@@ -6,7 +6,10 @@ function Header() {
   const total = expenses.reduce((accumulator, expense) => {
     return accumulator + expense.newPrice;
   }, 0);
-  const totalBrFormat = total.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+  const totalBrFormat = total.toLocaleString('pt-br', {
+    style: 'currency',
+    currency: 'BRL'
+  });
 
   return (
     <div className=" text-gray-700 bg-gray-100 border-b border-red-300 flex justify-between items-center px-6 py-4 text-lg sm:text-xl font-bold ">

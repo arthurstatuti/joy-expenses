@@ -50,7 +50,7 @@ function Home() {
 
         <main>
 
-          <div className="flex justify-evenly items-center mx-4">
+          <div className="flex justify-evenly items-center mr-1">
             <div className="sm:mx-5 my-8"> <ButtonADD /> </div>
             <div className=" sm:mx-5 my-8"> <ButtonSETTINGS /> </div>
           </div>
