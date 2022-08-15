@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import Header from "../components/Header";
 import ButtonSETTINGS from "../components/ButtonSETTINGS";
-import ButtonADD from "../components/ButtonADD";
+import ButtonNEW from "../components/ButtonNEW";
 import CardExpenseRow from "../components/CardExpenseRow";
 import TravelContext from "../context/TravelContext";
 
@@ -30,7 +30,7 @@ function Home() {
         <main>
 
           <div className="flex justify-evenly items-center mx-4">
-            <div className="sm:mx-5 my-8"> <ButtonADD /> </div>
+            <div className="sm:mx-5 my-8"> <ButtonNEW /> </div>
             <div className=" sm:mx-5 my-8"> <ButtonSETTINGS /> </div>
           </div>
 
@@ -51,11 +51,11 @@ function Home() {
         <main>
 
           <div className="flex justify-evenly items-center mr-3">
-            <div className="sm:mx-5 my-8"> <ButtonADD /> </div>
+            <div className="sm:mx-5 my-8"> <ButtonNEW /> </div>
             <div className=" sm:mx-5 my-8"> <ButtonSETTINGS /> </div>
           </div>
 
-          <h3 className=" my-4 mx-8 sm:mx-10 text-lg sm:text-xl">
+          <h3 className=" my-4 mx-8 sm:mx-10">
             {expenses.map(expense => <CardExpenseRow key={expense.id} expense={expense} />)}
           </h3>
 

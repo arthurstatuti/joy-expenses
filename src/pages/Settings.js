@@ -27,7 +27,7 @@ function Settings() {
         USD : American Dollar <br />
       </p>
 
-      <h4 className=" text-red-500 flex justify-center p-4 mt-4 font-bold"> ------- CLEAN ALL EXPENSES ------- </h4>
+      <h4 className=" text-red-500 flex justify-center p-4 mt-4 font-bold"> ------ CLEAN ALL EXPENSES ------ </h4>
 
       <div className="flex justify-evenly mx-12 my-4">
         <ButtonCLEAN />

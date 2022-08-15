@@ -46,7 +46,7 @@ function Add() {
 
         <Header />
 
-        <h2 className=" text-gray-700 bg-gray-100 border-b border-red-300 flex justify-center p-4 font-bold"> ADD NEW EXPENSE</h2>
+        <h2 className=" text-gray-700 bg-gray-100 border-b border-red-300 flex justify-center p-4 font-bold"> NEW EXPENSE</h2>
 
         <form className=" text-gray-700">
 
