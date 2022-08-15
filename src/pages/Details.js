@@ -55,11 +55,11 @@ function Details() {
           {detailedExpense.where}
         </div>
 
-        <div className=" text-2xl flex justify-center font-bold mx-4 mt-16"> {newPriceBrFormat} </div>
+        <div className=" text-2xl flex justify-center font-bold mx-4 mt-8"> {newPriceBrFormat} </div>
 
         <div className="flex justify-center mx-4 mt-1"> {`${dateBrFormat}`} </div>
 
-        <p className=" text-gray-700 flex justify-center p-4 m-10 mb-8">
+        <p className=" text-gray-700 flex justify-center p-4 mx-4 mt-4 text-sm">
           {`Original Price ${detailedExpense.price}`} <br />
           {`Original Currency ${detailedExpense.currency}`} <br />
           {`Exchange Rate ${detailedExpense.rate}`}
