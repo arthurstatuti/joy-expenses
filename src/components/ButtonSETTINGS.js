@@ -8,7 +8,7 @@ function ButtonSETTINGS() {
   return (
     <div>
       <button
-        className="border border-gray-500 rounded p-3"
+        className="border border-gray-500 rounded py-3 px-5"
         id="button-settings"
         type="button"
         onClick={() => navigate('/settings')}

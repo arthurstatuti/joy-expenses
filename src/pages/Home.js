@@ -28,9 +28,9 @@ function Home() {
         <div className=" m-2"> <Header /> </div>
 
         <main>
-          <div className="flex justify-between">
-            <div className=" m-2"> <ButtonSETTINGS /> </div>
-            <div className=" m-2"> <ButtonADD /> </div>
+          <div className="flex justify-evenly">
+            <div className=" mx-1 sm:mx-5 my-8"> <ButtonSETTINGS /> </div>
+            <div className="mx-1 sm:mx-5 my-8"> <ButtonADD /> </div>
           </div>
           <h3 className=" flex justify-center m-10 text-xl">
             You have no expenses
@@ -42,13 +42,21 @@ function Home() {
   } else {
     return (
       <div>
-        <Header />
-        <ButtonSETTINGS />
-        <ButtonADD />
-        {expenses.map(expense => <CardExpenseRow key={expense.id} expense={expense} />)}
+
+        <div className=" m-2"> <Header /> </div>
+
+        <main>
+          <div className="flex justify-evenly">
+            <div className=" mx-1 sm:mx-5 my-8"> <ButtonSETTINGS /> </div>
+            <div className="mx-1 sm:mx-5 my-8"> <ButtonADD /> </div>
+          </div>
+          <h3 className=" my-4 mx-2 sm:mx-10 text-lg sm:text-xl">
+            {expenses.map(expense => <CardExpenseRow key={expense.id} expense={expense} />)}
+          </h3>
+        </main >
+
       </div>
     )
-
   }
 }
 

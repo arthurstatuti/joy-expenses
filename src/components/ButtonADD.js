@@ -7,12 +7,12 @@ function ButtonADD() {
   return (
     <div>
       <button
-        className="border border-gray-500 rounded p-5"
+        className="border border-gray-500 rounded py-5 px-5 sm:px-12 bg-blue-100 sm:text-lg font-bold"
         id="button-add"
         type="button"
         onClick={() => navigate('/add')}
       >
-        ADD NEW EXPENSE
+        NEW EXPENSE
       </button>
     </div>
   )

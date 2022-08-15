@@ -4,9 +4,9 @@ import ButtonDETAILS from "../components/ButtonDETAILS";
 
 function CardExpenseRow({ expense }) {
   return (
-    <div>
+    <div className="flex justify-evenly border-b border-gray-300 my-7">
 
-      <div>
+      <div className=" font-bold">
         {`R$ ${parseFloat(expense.newPrice).toFixed(2)}`}
       </div>
 
