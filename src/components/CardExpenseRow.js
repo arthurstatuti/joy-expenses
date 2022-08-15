@@ -3,18 +3,22 @@ import PropTypes from 'prop-types';
 import ButtonDETAILS from "../components/ButtonDETAILS";
 
 function CardExpenseRow({ expense }) {
-  return (
-    <div className=" text-gray-700 flex justify-evenly border-b border-red-300 my-7 transform hover:scale-105 shadow-sm hover:shadow-md transition ease-out duration-500">
+  const date = expense.date;
+  const dateSplit = date.split('-');
+  const dateBr = `${dateSplit[2]}/${dateSplit[1]}/${dateSplit[0]}`;
 
-      <div className=" font-bold">
+  return (
+    <div className=" text-gray-700 border-b border-red-300 my-7 transform hover:scale-105 shadow-sm hover:shadow-md transition ease-out duration-500 grid grid-cols-3">
+
+      <div className=" font-bold ml-4">
         {`R$ ${parseFloat(expense.newPrice).toFixed(2)}`}
       </div>
 
-      <div>
-        {`${expense.date}`}
+      <div className=" flex justify-center ml-20">
+        {`${dateBr}`}
       </div>
 
-      <div>
+      <div className=" flex justify-center ml-10">
         <ButtonDETAILS expense={expense} />
       </div>
 
