@@ -67,12 +67,12 @@ function ButtonSAVE() {
   }, [expenses]);
 
   return (
-    <div className=" text-gray-700 bg-gray-100 border border-red-300 rounded py-5 px-5 sm:px-12 sm:text-lg font-bold transform hover:scale-105 shadow-sm hover:shadow-md transition ease-out duration-200 flex justify-center">
+    <div className=" text-gray-700 bg-gray-100 border border-red-300 rounded py-5 px-5 sm:px-12 sm:text-lg font-bold transform hover:scale-105 shadow-sm hover:shadow-md transition ease-out duration-200 flex justify-center"
+      onClick={handleSAVE}>
       <button
         id="button-save"
         type="button"
         disabled={disabled}
-        onClick={handleSAVE}
       >
         SAVE
       </button>

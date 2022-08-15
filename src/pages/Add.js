@@ -43,56 +43,83 @@ function Add() {
 
     return (
       <div>
+
         <Header />
 
         <h2 className=" text-gray-700 bg-gray-100 border-b border-red-300 flex justify-center p-4 font-bold"> ADD NEW EXPENSE</h2>
 
-        <form>
+        <form className=" text-gray-700">
 
-          <label htmlFor="what"> WHAT </label>
-          <input
-            id="what"
-            type="text"
-            onChange={(event) => setWhat(event.target.value)}
-          >
-          </input>
-          <p></p>
+          <label htmlFor="what">
+            <div className="flex justify-center font-bold mt-4">
+              WHAT
+            </div>
+            <div className="flex justify-center">
+              <input
+                className="border mx-8 my-2"
+                id="what"
+                type="text"
+                onChange={(event) => setWhat(event.target.value)}
+              />
+            </div>
+          </label>
 
-          <label htmlFor="where"> WHERE </label>
-          <input
-            id="where"
-            type="text"
-            onChange={(event) => setWhere(event.target.value)}
-          >
-          </input>
-          <p></p>
+          <label htmlFor="where">
+            <div className="flex justify-center font-bold mt-4">
+              WHERE
+            </div>
+            <div className="flex justify-center">
+              <input
+                className="border mx-8 my-2"
+                id="where"
+                type="text"
+                onChange={(event) => setWhere(event.target.value)}
+              />
+            </div>
+          </label>
 
-          <label htmlFor="date"> DATE </label>
-          <input
-            id="date"
-            type="date"
-            onChange={(event) => setDate(event.target.value)}
-          >
-          </input>
-          <p></p>
+          <label htmlFor="date">
+            <div className="flex justify-center font-bold mt-4">
+              DATE
+            </div>
+            <div className="flex justify-center">
+              <input
+                className="border mx-8 my-2"
+                id="date"
+                type="date"
+                onChange={(event) => setDate(event.target.value)}
+              />
+            </div>
+          </label>
 
-          <label htmlFor="price"> PRICE </label>
-          <input
-            id="price"
-            type="number"
-            onChange={(event) => setPrice(event.target.value)}
-          >
-          </input>
-          <p></p>
+          <label htmlFor="price">
+            <div className="flex justify-center font-bold mt-4">
+              PRICE
+            </div>
+            <div className="flex justify-center">
+              <input
+                className="border mx-8 my-2"
+                id="price"
+                type="number"
+                onChange={(event) => setPrice(event.target.value)}
+              />
+            </div>
+          </label>
 
-          <label htmlFor="currency"> CURRENCY </label>
-          <select
-            id="currency"
-            onChange={setCurrencyAndSetRate}
-          >
-            {currencies.map(currency => <option key={currency}> {currency} </option>)}
-          </select>
-          <p></p>
+          <label htmlFor="currency">
+            <div className="flex justify-center font-bold mt-4">
+              CURRENCY
+            </div>
+            <div className="flex justify-center">
+              <select
+                className="border mx-8 my-2"
+                id="currency"
+                onChange={setCurrencyAndSetRate}
+              >
+                {currencies.map(currency => <option key={currency}> {currency} </option>)}
+              </select>
+            </div>
+          </label>
 
         </form>
 
