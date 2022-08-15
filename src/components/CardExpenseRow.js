@@ -5,20 +5,24 @@ import ButtonDETAILS from "../components/ButtonDETAILS";
 function CardExpenseRow({ expense }) {
   const date = expense.date;
   const dateSplit = date.split('-');
-  const dateBr = `${dateSplit[2]}/${dateSplit[1]}/${dateSplit[0]}`;
+  const yearBrFormat = dateSplit[0].slice(2);
+  const dateBrFormat = `${dateSplit[2]}/${dateSplit[1]}/${yearBrFormat}`;
+
+  const newPrice = expense.newPrice;
+  const newPriceBrFormat = newPrice.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
 
   return (
-    <div className=" text-gray-700 border-b border-red-300 my-7 transform hover:scale-105 shadow-sm hover:shadow-md transition ease-out duration-500 grid grid-cols-3">
+    <div className=" text-gray-700 border-b border-red-300 my-7 transform hover:scale-105 shadow-sm hover:shadow-md transition ease-out duration-500 grid grid-cols-3 text-sm">
 
-      <div className=" font-bold ml-4">
-        {`R$ ${parseFloat(expense.newPrice).toFixed(2)}`}
+      <div className=" font-bold">
+        {`${dateBrFormat}`}
       </div>
 
-      <div className=" flex justify-center ml-20">
-        {`${dateBr}`}
+      <div className="flex justify-start font-bold">
+        {newPriceBrFormat}
       </div>
 
-      <div className=" flex justify-center ml-10">
+      <div className=" flex justify-center">
         <ButtonDETAILS expense={expense} />
       </div>
 

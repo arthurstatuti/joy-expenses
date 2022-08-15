@@ -28,13 +28,16 @@ function Home() {
         <div> <Header /> </div>
 
         <main>
-          <div className="flex justify-evenly">
-            <div className=" mx-1 sm:mx-5 my-8"> <ButtonSETTINGS /> </div>
-            <div className="mx-1 sm:mx-5 my-8"> <ButtonADD /> </div>
+
+          <div className="flex justify-evenly items-center mx-4">
+            <div className="sm:mx-5 my-8"> <ButtonADD /> </div>
+            <div className=" sm:mx-5 my-8"> <ButtonSETTINGS /> </div>
           </div>
+
           <h3 className=" flex justify-center m-10 text-xl">
             You have no expenses
           </h3>
+
         </main >
 
       </div>
@@ -46,13 +49,16 @@ function Home() {
         <div> <Header /> </div>
 
         <main>
-          <div className="flex justify-evenly">
-            <div className=" mx-1 sm:mx-5 my-8"> <ButtonSETTINGS /> </div>
-            <div className="mx-1 sm:mx-5 my-8"> <ButtonADD /> </div>
+
+          <div className="flex justify-evenly items-center mx-4">
+            <div className="sm:mx-5 my-8"> <ButtonADD /> </div>
+            <div className=" sm:mx-5 my-8"> <ButtonSETTINGS /> </div>
           </div>
-          <h3 className=" my-4 mx-2 sm:mx-10 text-lg sm:text-xl">
+
+          <h3 className=" my-4 mx-8 sm:mx-10 text-lg sm:text-xl">
             {expenses.map(expense => <CardExpenseRow key={expense.id} expense={expense} />)}
           </h3>
+
         </main >
 
       </div>
