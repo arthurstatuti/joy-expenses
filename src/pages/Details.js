@@ -17,38 +17,41 @@ function Details() {
 
   if (detailedExpense.length === 0) {
     return (
-      <div>
+      <div className=" text-gray-700">
         <Header />
-        <h3> NO EXPENSE SELECTED </h3>
-        <ButtonBACK />
+        <h3 className="flex justify-center font-bold text-lg m-20"> NO EXPENSE SELECTED </h3>
+
+        <div className="flex justify-evenly mx-12 my-4">
+          <ButtonBACK />
+        </div>
       </div>
     )
   } else {
     return (
-      <div className=" text-gray-700">
+      <div className=" text-gray-700 text-lg">
         <Header />
 
         <h2 className=" text-gray-700 bg-gray-100 border-b border-red-300 flex justify-center p-4 font-bold"> EXPENSE DETAILS </h2>
 
-        <div className="flex justify-center font-bold mt-4">
+        <div className="flex justify-center font-bold mx-4 mt-8">
           <h3> WHAT </h3>
         </div>
         <div className="flex justify-center">
           {detailedExpense.what}
         </div>
 
-        <div className="flex justify-center font-bold mt-4">
+        <div className="flex justify-center font-bold mx-4 mt-8">
           <h3> WHERE </h3>
         </div>
         <div className="flex justify-center">
           {detailedExpense.where}
         </div>
 
-        <div className="flex justify-center font-bold mt-4"> {`${detailedExpense.date}`} </div>
+        <div className=" text-2xl flex justify-center font-bold mx-4 mt-16"> {`R$ ${parseFloat(detailedExpense.newPrice).toFixed(2)}`} </div>
 
-        <div className="flex justify-center font-bold mt-4"> {`R$ ${parseFloat(detailedExpense.newPrice).toFixed(2)}`} </div>
+        <div className="flex justify-center mx-4 mt-1"> {`${detailedExpense.date}`} </div>
 
-        <p className=" text-gray-700 flex justify-center p-4">
+        <p className=" text-gray-700 flex justify-center p-4 m-10 mb-8">
           {`Original Price ${detailedExpense.price}`} <br />
           {`Original Currency ${detailedExpense.currency}`} <br />
           {`Exchange Rate ${detailedExpense.rate}`}
