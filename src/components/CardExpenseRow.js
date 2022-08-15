@@ -4,7 +4,7 @@ import ButtonDETAILS from "../components/ButtonDETAILS";
 
 function CardExpenseRow({ expense }) {
   return (
-    <div className="flex justify-evenly border-b border-gray-300 my-7">
+    <div className="flex justify-evenly border-b border-gray-300 my-7 transform hover:scale-105 shadow-sm hover:shadow-md transition ease-out duration-500">
 
       <div className=" font-bold">
         {`R$ ${parseFloat(expense.newPrice).toFixed(2)}`}
