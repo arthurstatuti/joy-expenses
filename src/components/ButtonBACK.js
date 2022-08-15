@@ -8,9 +8,6 @@ function ButtonBACK() {
     setWhat,
     setWhere,
     setDate,
-    // setDay,
-    // setMonth,
-    // setYear,
     setPrice,
     setCurrency,
     setRate,
@@ -23,9 +20,6 @@ function ButtonBACK() {
     setWhat("");
     setWhere("");
     setDate("");
-    // setDay("");
-    // setMonth("");
-    // setYear("");
     setPrice("");
     setCurrency("");
     setRate(0);
@@ -34,7 +28,7 @@ function ButtonBACK() {
   }
 
   return (
-    <div>
+    <div className=" text-gray-700 bg-gray-100 border border-red-300 rounded py-5 px-5 sm:px-12 sm:text-lg font-bold transform hover:scale-105 shadow-sm hover:shadow-md transition ease-out duration-200">
       <button
         id="button-back"
         type="button"
