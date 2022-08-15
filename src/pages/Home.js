@@ -25,7 +25,7 @@ function Home() {
     return (
       <div>
 
-        <div className=" m-2"> <Header /> </div>
+        <div> <Header /> </div>
 
         <main>
           <div className="flex justify-evenly">
@@ -43,7 +43,7 @@ function Home() {
     return (
       <div>
 
-        <div className=" m-2"> <Header /> </div>
+        <div> <Header /> </div>
 
         <main>
           <div className="flex justify-evenly">
