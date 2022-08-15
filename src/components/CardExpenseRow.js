@@ -9,7 +9,7 @@ function CardExpenseRow({ expense }) {
   const dateBrFormat = `${dateSplit[2]}/${dateSplit[1]}/${yearBrFormat}`;
 
   const newPrice = expense.newPrice;
-  const newPriceBrFormat = newPrice.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+  const newPriceBrFormat = newPrice.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
 
   return (
     <div className=" text-gray-700 border-b border-red-300 my-7  shadow-sm hover:shadow-md transition ease-out duration-500 grid grid-cols-5 text-lg">

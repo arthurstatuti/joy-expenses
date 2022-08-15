@@ -12,6 +12,9 @@ function Details() {
   const yearBrFormat = dateSplit[0].slice(2);
   const dateBrFormat = `${dateSplit[2]}/${dateSplit[1]}/${yearBrFormat}`;
 
+  const newPrice = detailedExpense.newPrice;
+  const newPriceBrFormat = newPrice.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+
   useEffect(() => {
     const lcStDetExpense = JSON.parse(localStorage.getItem('detailedExpense'));
     if (lcStDetExpense) {
@@ -52,7 +55,7 @@ function Details() {
           {detailedExpense.where}
         </div>
 
-        <div className=" text-2xl flex justify-center font-bold mx-4 mt-16"> {`R$ ${parseFloat(detailedExpense.newPrice).toFixed(2)}`} </div>
+        <div className=" text-2xl flex justify-center font-bold mx-4 mt-16"> {newPriceBrFormat} </div>
 
         <div className="flex justify-center mx-4 mt-1"> {`${dateBrFormat}`} </div>
 
