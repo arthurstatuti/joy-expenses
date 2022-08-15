@@ -7,6 +7,11 @@ import TravelContext from "../context/TravelContext";
 function Details() {
   const { detailedExpense, setDetailedExpense } = useContext(TravelContext);
 
+  const date = detailedExpense.date;
+  const dateSplit = date.split('-');
+  const yearBrFormat = dateSplit[0].slice(2);
+  const dateBrFormat = `${dateSplit[2]}/${dateSplit[1]}/${yearBrFormat}`;
+
   useEffect(() => {
     const lcStDetExpense = JSON.parse(localStorage.getItem('detailedExpense'));
     if (lcStDetExpense) {
@@ -49,7 +54,7 @@ function Details() {
 
         <div className=" text-2xl flex justify-center font-bold mx-4 mt-16"> {`R$ ${parseFloat(detailedExpense.newPrice).toFixed(2)}`} </div>
 
-        <div className="flex justify-center mx-4 mt-1"> {`${detailedExpense.date}`} </div>
+        <div className="flex justify-center mx-4 mt-1"> {`${dateBrFormat}`} </div>
 
         <p className=" text-gray-700 flex justify-center p-4 m-10 mb-8">
           {`Original Price ${detailedExpense.price}`} <br />

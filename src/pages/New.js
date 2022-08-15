@@ -56,7 +56,7 @@ function Add() {
             </div>
             <div className="flex justify-center">
               <input
-                className="border-b border-red-300 mx-8 my-2"
+                className="border-b border-red-300 mx-8 my-2 text-center"
                 id="what"
                 type="text"
                 onChange={(event) => setWhat(event.target.value)}
@@ -70,7 +70,7 @@ function Add() {
             </div>
             <div className="flex justify-center">
               <input
-                className="border-b border-red-300 mx-8 my-2"
+                className="border-b border-red-300 mx-8 my-2 text-center"
                 id="where"
                 type="text"
                 onChange={(event) => setWhere(event.target.value)}
@@ -98,7 +98,7 @@ function Add() {
             </div>
             <div className="flex justify-center">
               <input
-                className="border-b border-red-300 mx-8 my-2"
+                className="border-b border-red-300 mx-8 my-2 text-center"
                 id="price"
                 type="number"
                 onChange={(event) => setPrice(event.target.value)}
