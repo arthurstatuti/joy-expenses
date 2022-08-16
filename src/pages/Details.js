@@ -36,7 +36,7 @@ function Details() {
     )
   } else {
     return (
-      <div className=" text-gray-700 text-lg">
+      <div className=" text-gray-700">
         <Header />
 
         <h2 className=" text-gray-700 bg-gray-100 border-b border-red-300 flex justify-center p-4 font-bold"> EXPENSE DETAILS </h2>
