@@ -12,7 +12,7 @@ function CardExpenseRow({ expense }) {
   const newPriceBrFormat = newPrice.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
 
   return (
-    <div className=" border-b border-yellow-800 my-7  shadow-sm hover:shadow-md transition ease-out duration-500 grid grid-cols-5 text-lg">
+    <div className=" border-b border-yellow-800 my-7 shadow-sm hover:shadow-md transition ease-out duration-500 grid grid-cols-5 text-lg">
 
       <div className="font-bold col-span-2">
         {`${dateBrFormat}`}

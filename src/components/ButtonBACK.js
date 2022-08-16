@@ -28,7 +28,7 @@ function ButtonBACK() {
   }
 
   return (
-    <div className=" bg-yellow-400 border border-yellow-800 rounded-xl py-5 px-5 sm:px-12 sm:text-lg font-bold hover:cursor-pointer transform hover:scale-105 shadow-sm hover:shadow-md transition ease-out duration-200 flex justify-center"
+    <div className=" bg-yellow-400 border border-yellow-800 rounded-xl py-5 px-5 md:px-10 font-bold hover:cursor-pointer transform hover:scale-105 shadow-sm hover:shadow-md transition ease-out duration-500 flex justify-center"
       onClick={handleBACK}>
       <button
         id="button-back"

@@ -62,7 +62,7 @@ function Details() {
           {detailedExpense.where}
         </div>
 
-        <div className="text-2xl flex justify-center font-bold mx-4 mt-8"> {newPriceBrFormat} </div>
+        <div className="text-xl flex justify-center font-bold mx-4 mt-8"> {newPriceBrFormat} </div>
 
         <div className="flex justify-center mx-4 mt-1"> {`${dateBrFormat}`} </div>
 
