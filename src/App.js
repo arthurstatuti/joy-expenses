@@ -3,7 +3,9 @@ import AppRoutes from './routes/Routes';
 
 function App() {
   return (
-    <AppRoutes />
+    <div className=' text-gray-800 font-mono bg-yellow-50'>
+      <AppRoutes />
+    </div>
   );
 }
 

@@ -46,9 +46,9 @@ function Add() {
 
         <Header />
 
-        <h2 className=" text-gray-700 bg-gray-100 border-b border-red-300 flex justify-center p-4 font-bold"> NEW EXPENSE</h2>
+        <h2 className=" bg-gray-100 border-b border-yellow-800 flex justify-center p-4 font-bold"> NEW EXPENSE</h2>
 
-        <form className=" text-gray-700">
+        <form>
 
           <label htmlFor="what">
             <div className="flex justify-center font-bold mt-4">
@@ -56,7 +56,7 @@ function Add() {
             </div>
             <div className="flex justify-center">
               <input
-                className="border-b border-red-300 mx-8 my-2 text-center"
+                className="bg-inherit border-b border-yellow-800 mx-8 my-2 text-center"
                 id="what"
                 type="text"
                 onChange={(event) => setWhat(event.target.value)}
@@ -70,7 +70,7 @@ function Add() {
             </div>
             <div className="flex justify-center">
               <input
-                className="border-b border-red-300 mx-8 my-2 text-center"
+                className="bg-inherit border-b border-yellow-800 mx-8 my-2 text-center"
                 id="where"
                 type="text"
                 onChange={(event) => setWhere(event.target.value)}
@@ -84,7 +84,7 @@ function Add() {
             </div>
             <div className="flex justify-center">
               <input
-                className="border-b border-red-300 mx-8 my-2"
+                className="bg-inherit border-b border-yellow-800 mx-8 my-2"
                 id="date"
                 type="date"
                 onChange={(event) => setDate(event.target.value)}
@@ -98,7 +98,7 @@ function Add() {
             </div>
             <div className="flex justify-center">
               <input
-                className="border-b border-red-300 mx-8 my-2 text-center"
+                className="bg-inherit border-b border-yellow-800 mx-8 my-2 text-center"
                 id="price"
                 type="number"
                 onChange={(event) => setPrice(event.target.value)}
@@ -112,7 +112,7 @@ function Add() {
             </div>
             <div className="flex justify-center">
               <select
-                className="border-b border-red-300 mx-8 my-2 px-24 py-1"
+                className="bg-inherit border-b border-yellow-800 mx-8 my-2 px-24 py-1"
                 id="currency"
                 onChange={setCurrencyAndSetRate}
               >

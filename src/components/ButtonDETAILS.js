@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import TravelContext from "../context/TravelContext";
-import { InformationCircleIcon } from '@heroicons/react/solid'
+import { InformationCircleIcon } from '@heroicons/react/outline'
 
 function ButtonDETAILS({ expense }) {
   const navigate = useNavigate();

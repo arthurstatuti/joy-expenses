@@ -12,7 +12,7 @@ function Header() {
   });
 
   return (
-    <div className=" text-gray-700 bg-gray-100 border-b border-red-300 flex justify-between items-center px-6 py-4 text-lg sm:text-xl font-bold ">
+    <div className=" bg-amber-400 border-b border-yellow-800 flex justify-between items-center px-6 py-4 text-lg sm:text-xl font-bold ">
 
       <h1 className="flex items-center px-4"> TRAVEL <br /> EXPENSES </h1>
 

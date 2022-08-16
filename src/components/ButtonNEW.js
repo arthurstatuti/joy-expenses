@@ -7,7 +7,7 @@ function ButtonNEW() {
   return (
     <div>
       <button
-        className=" text-gray-700 bg-gray-100 border border-red-300 rounded py-4 px-14 text-sm sm:text-lg font-bold transform hover:scale-105 shadow-sm hover:shadow-md transition ease-out duration-200"
+        className=" bg-gray-100 border border-yellow-800 rounded py-4 px-14 text-sm sm:text-lg font-bold transform hover:scale-105 shadow-sm hover:shadow-md transition ease-out duration-200"
         id="button-add"
         type="button"
         onClick={() => navigate('/new')}

@@ -34,8 +34,8 @@ function Home() {
             <div className=" sm:mx-5 my-8"> <ButtonSETTINGS /> </div>
           </div>
 
-          <h3 className=" flex justify-center m-10 text-xl">
-            You have no expenses
+          <h3 className=" flex justify-center m-10 text-xl font-bold">
+            YOU HAVE NO EXPENSES
           </h3>
 
         </main >
