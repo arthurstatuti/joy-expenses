@@ -66,13 +66,13 @@ function Details() {
 
         <div className="flex justify-center mx-4 mt-1"> {`${dateBrFormat}`} </div>
 
-        <p className="flex justify-center p-4 mx-4 mt-4 text-sm">
+        <p className="flex justify-center p-4 mx-4 mt-5 text-sm">
           {`Original Price ${detailedExpense.price}`} <br />
           {`Original Currency ${detailedExpense.currency}`} <br />
           {`Exchange Rate ${detailedExpense.rate}`}
         </p>
 
-        <div className="flex justify-evenly mx-12 my-4">
+        <div className="flex justify-evenly mx-12 mt-7">
           <ButtonDELETE />
           <ButtonBACK />
         </div>

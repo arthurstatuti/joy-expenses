@@ -8,7 +8,7 @@ function ButtonSETTINGS() {
   return (
     <div>
       <button
-        className="bg-gray-100 border border-yellow-800 rounded px-4 py-4 text-sm sm:text-lg font-bold transform hover:scale-105 shadow-sm hover:shadow-md transition ease-out duration-200"
+        className="bg-yellow-400 border border-yellow-800 rounded px-5 py-4 sm:text-lg font-bold transform hover:scale-105 shadow-sm hover:shadow-md transition ease-out duration-200"
         id="button-settings"
         type="button"
         onClick={() => navigate('/settings')}
