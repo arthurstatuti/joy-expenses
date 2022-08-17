@@ -30,8 +30,8 @@ function Home() {
         <main>
 
           <div className="flex justify-evenly items-center mx-4">
-            <div className="sm:mx-5 my-8"> <ButtonNEW /> </div>
-            <div className=" sm:mx-5 my-8"> <ButtonSETTINGS /> </div>
+            <div className="my-8"> <ButtonNEW /> </div>
+            <div className="my-8"> <ButtonSETTINGS /> </div>
           </div>
 
           <h3 className=" flex justify-center m-10 text-xl font-bold">
@@ -51,8 +51,8 @@ function Home() {
         <main>
 
           <div className="flex justify-evenly items-center mr-3">
-            <div className="sm:mx-5 my-8"> <ButtonNEW /> </div>
-            <div className=" sm:mx-5 my-8"> <ButtonSETTINGS /> </div>
+            <div className="my-8"> <ButtonNEW /> </div>
+            <div className="my-8"> <ButtonSETTINGS /> </div>
           </div>
 
           <h3 className=" my-4 mx-8 sm:mx-10">

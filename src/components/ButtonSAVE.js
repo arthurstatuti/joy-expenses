@@ -67,7 +67,7 @@ function ButtonSAVE() {
   }, [expenses]);
 
   return (
-    <div className=" bg-gray-100 border border-yellow-800 rounded py-5 px-5 sm:px-12 sm:text-lg font-bold transform hover:scale-105 shadow-sm hover:shadow-md transition ease-out duration-200 flex justify-center"
+    <div className=" bg-lime-500 border border-yellow-800 rounded-xl py-5 px-5 md:px-10 font-bold hover:cursor-pointer transform hover:scale-105 shadow-sm hover:shadow-md transition ease-out duration-500 flex justify-center"
       onClick={handleSAVE}>
       <button
         id="button-save"
