@@ -14,7 +14,9 @@ function Header() {
   return (
     <div>
 
-      <h1 className=" italic text-white bg-purple-600 border-b border-yellow-800 flex justify-center items-center px-6 py-4 text-lg font-bold "> JOY EXPENSES </h1>
+      <h1 className=" italic text-white bg-purple-600 border-b border-yellow-800 flex justify-center items-center px-6 py-4 text-lg font-bold "
+      > JOY EXPENSES
+      </h1>
 
       <div className=" flex justify-center items-center text-white bg-purple-600 border-b border-yellow-800  px-6 py-4 text-lg font-bold ">
 
@@ -25,6 +27,7 @@ function Header() {
         </h1>
 
       </div>
+
     </div>
 
   );
