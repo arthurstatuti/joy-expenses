@@ -15,8 +15,9 @@ function ButtonDELETE() {
   }, [expenses]);
 
   return (
-    <div className=" bg-red-400 border border-yellow-800 rounded-xl py-5 px-2 md:px-8 font-bold hover:cursor-pointer transform hover:scale-105 shadow-sm hover:shadow-md transition ease-out duration-500 flex justify-center">
+    <div>
       <button
+        className=" bg-red-400 hover:bg-yellow-700 hover:text-white border border-yellow-800 rounded-xl py-5 px-2 md:px-8 font-bold hover:cursor-pointer shadow-sm hover:shadow-md transition ease-out duration-100 flex justify-center"
         id="button-delete"
         type="button"
         onClick={handleDELETE}

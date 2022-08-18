@@ -50,7 +50,7 @@ function ButtonSAVE() {
   }
 
   function toggleButtonSAVE() {
-    if (what !== '' && where !== '' && date !== '' && price !== '' && currency !== '') {
+    if (what !== "" && where !== "" && date !== "" && price !== "" && currency !== "") {
       setDisabled(false);
       return;
     }
@@ -67,12 +67,13 @@ function ButtonSAVE() {
   }, [expenses]);
 
   return (
-    <div className=" bg-lime-500 border border-yellow-800 rounded-xl py-5 px-5 md:px-10 font-bold hover:cursor-pointer transform hover:scale-105 shadow-sm hover:shadow-md transition ease-out duration-500 flex justify-center"
-      onClick={handleSAVE}>
+    <div>
       <button
+        className=" bg-lime-500 hover:bg-yellow-700 hover:text-white border border-yellow-800 rounded-xl py-5 px-5 md:px-10 font-bold hover:cursor-pointer shadow-sm hover:shadow-md transition ease-out duration-100 flex justify-center"
         id="button-save"
         type="button"
         disabled={disabled}
+        onClick={handleSAVE}
       >
         SAVE
       </button>
