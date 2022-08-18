@@ -56,7 +56,7 @@ function Add() {
             </div>
             <div className="flex justify-center">
               <input
-                className="bg-inherit border-b border-yellow-800 mx-8 my-2 text-center"
+                className=" w-80 bg-inherit border-b border-yellow-800 mx-8 my-2 text-center"
                 id="what"
                 type="text"
                 onChange={(event) => setWhat(event.target.value)}
@@ -70,7 +70,7 @@ function Add() {
             </div>
             <div className="flex justify-center">
               <input
-                className="bg-inherit border-b border-yellow-800 mx-8 my-2 text-center"
+                className=" w-80 bg-inherit border-b border-yellow-800 mx-8 my-2 text-center"
                 id="where"
                 type="text"
                 onChange={(event) => setWhere(event.target.value)}
@@ -84,7 +84,7 @@ function Add() {
             </div>
             <div className="flex justify-center">
               <input
-                className="bg-inherit border-b border-yellow-800 mx-8 my-2"
+                className=" w-80 text-center bg-inherit border-b border-yellow-800 mx-8 my-2"
                 id="date"
                 type="date"
                 onChange={(event) => setDate(event.target.value)}
@@ -98,7 +98,7 @@ function Add() {
             </div>
             <div className="flex justify-center">
               <input
-                className="bg-inherit border-b border-yellow-800 mx-8 my-2 text-center"
+                className=" w-80 bg-inherit border-b border-yellow-800 mx-8 my-2 text-center"
                 id="price"
                 type="number"
                 onChange={(event) => setPrice(event.target.value)}
@@ -112,7 +112,7 @@ function Add() {
             </div>
             <div className="flex justify-center">
               <select
-                className="bg-inherit border-b border-yellow-800 mx-8 my-2 px-24 py-1"
+                className=" w-80 text-center bg-inherit border-b border-yellow-800 mx-8 my-2 px-24 py-1"
                 id="currency"
                 onChange={setCurrencyAndSetRate}
               >
