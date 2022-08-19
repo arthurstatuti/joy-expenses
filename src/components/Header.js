@@ -20,7 +20,7 @@ function Header() {
 
       <div className=" flex justify-center items-center text-white bg-purple-600 border-b border-yellow-800  px-6 py-4 text-lg font-bold ">
 
-        <h1 className=" px-4"> Total <br></br> Spent: </h1>
+        <h1 className=" px-4"> Despesa <br></br> Total: </h1>
 
         <h1 className=" px-4 py-1">
           {totalBrFormat}

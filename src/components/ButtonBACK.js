@@ -35,7 +35,7 @@ function ButtonBACK() {
         type="button"
         onClick={handleBACK}
       >
-        BACK
+        VOLTAR
       </button>
     </div>
   );

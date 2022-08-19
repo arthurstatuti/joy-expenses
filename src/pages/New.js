@@ -46,13 +46,13 @@ function Add() {
 
         <Header />
 
-        <h2 className=" bg-gray-100 border-b border-yellow-800 flex justify-center p-4 font-bold"> NEW EXPENSE</h2>
+        <h2 className=" bg-gray-100 border-b border-yellow-800 flex justify-center p-4 font-bold"> NOVA DESPESA</h2>
 
         <form>
 
           <label htmlFor="what">
             <div className="flex justify-center font-bold mt-4">
-              WHAT
+              O QUÊ
             </div>
             <div className="flex justify-center">
               <input
@@ -66,7 +66,7 @@ function Add() {
 
           <label htmlFor="where">
             <div className="flex justify-center font-bold mt-4">
-              WHERE
+              ONDE
             </div>
             <div className="flex justify-center">
               <input
@@ -80,7 +80,7 @@ function Add() {
 
           <label htmlFor="date">
             <div className="flex justify-center font-bold mt-4">
-              DATE
+              QUANDO
             </div>
             <div className="flex justify-center">
               <input
@@ -94,7 +94,7 @@ function Add() {
 
           <label htmlFor="price">
             <div className="flex justify-center font-bold mt-4">
-              PRICE
+              PREÇO
             </div>
             <div className="flex justify-center">
               <input
@@ -108,7 +108,7 @@ function Add() {
 
           <label htmlFor="currency">
             <div className="flex justify-center font-bold mt-4">
-              CURRENCY
+              MOEDA
             </div>
             <div className="flex justify-center">
               <select

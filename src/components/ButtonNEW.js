@@ -12,7 +12,7 @@ function ButtonNEW() {
         type="button"
         onClick={() => navigate('/new')}
       >
-        NEW EXPENSE
+        NOVA DESPESA
       </button>
     </div>
   )

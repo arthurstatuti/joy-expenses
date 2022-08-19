@@ -16,7 +16,7 @@ function ButtonCLEAN() {
         type="button"
         onClick={() => setExpenses([])}
       >
-        CLEAN
+        LIMPAR
       </button>
     </div >
   );

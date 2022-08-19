@@ -22,7 +22,7 @@ function ButtonDELETE() {
         type="button"
         onClick={handleDELETE}
       >
-        DELETE
+        EXCLUIR
       </button>
     </div>
   );

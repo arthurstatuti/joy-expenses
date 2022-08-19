@@ -44,10 +44,10 @@ function Details() {
 
         <Header />
 
-        <h2 className="bg-gray-100 border-b border-yellow-800 flex justify-center p-4 font-bold"> EXPENSE DETAILS </h2>
+        <h2 className="bg-gray-100 border-b border-yellow-800 flex justify-center p-4 font-bold"> DETALHES DA DESPESA </h2>
 
         <div className="flex justify-center font-bold mx-4 mt-8">
-          <h3> WHAT </h3>
+          <h3> O QUÊ </h3>
         </div>
 
         <div className="flex justify-center">
@@ -55,7 +55,7 @@ function Details() {
         </div>
 
         <div className="flex justify-center font-bold mx-4 mt-7">
-          <h3> WHERE </h3>
+          <h3> ONDE </h3>
         </div>
 
         <div className="flex justify-center">
@@ -67,9 +67,9 @@ function Details() {
         <div className="flex justify-center mx-4 mt-1"> {`${dateBrFormat}`} </div>
 
         <p className="flex justify-center p-4 mx-4 mt-5 text-sm">
-          {`Original Price: ${detailedExpense.price}`} <br />
-          {`Original Currency: ${detailedExpense.currency}`} <br />
-          {`Exchange Rate: ${detailedExpense.rate}`}
+          {`Preço Original: ${detailedExpense.price}`} <br />
+          {`Moeda Original: ${detailedExpense.currency}`} <br />
+          {`Taxa de Câmbio: ${detailedExpense.rate}`}
         </p>
 
         <div className="flex justify-evenly mx-12 mt-7">

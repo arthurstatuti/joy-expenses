@@ -75,7 +75,7 @@ function ButtonSAVE() {
         disabled={disabled}
         onClick={handleSAVE}
       >
-        SAVE
+        SALVAR
       </button>
     </div>
   );

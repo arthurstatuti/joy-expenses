@@ -9,30 +9,30 @@ function Settings() {
 
       <Header />
 
-      <h2 className=" bg-gray-100 border-b border-yellow-800 flex justify-center p-4 font-bold"> SETTINGS </h2>
+      <h2 className=" bg-gray-100 border-b border-yellow-800 flex justify-center p-4 font-bold"> CONFIGURAÇÕES </h2>
 
-      <h4 className=" flex justify-center p-4 font-bold mt-4"> CURRENCIES AVAILABLE </h4>
+      <h4 className=" flex justify-center p-4 font-bold mt-4"> MOEDAS DISPONÍVEIS </h4>
 
-      <p className=" flex justify-center px-4">
-        ARS : Argentine Peso <br />
-        AUD : Australian Dollar <br />
-        BRL : Brazilian Real <br />
-        CAD : Canadian Dollar <br />
-        CHF : Swiss Franc <br />
-        CNY : Chinese Yuan <br />
+      <p className=" flex justify-center px-4 mt-1">
+        ARS : Peso Argentino <br />
+        AUD : Dólar Australiano <br />
+        BRL : Real Brasileiro <br />
+        CAD : Dólar Canadense <br />
+        CHF : Franco Suíço <br />
+        CNY : Yuan Chinês <br />
         EUR : Euro <br />
-        GBP : Pound Sterling <br />
-        ILS : Israeli New Shekel <br />
-        JPY : Japanese Yen <br />
-        USD : American Dollar <br />
+        GBP : Libra Esterlina <br />
+        ILS : Novo Shekel Israelense <br />
+        JPY : Iene Japonês <br />
+        USD : Dólar Americano <br />
       </p>
 
       <h4
         className="flex justify-center p-4 mt-4 font-bold">
-        CLEAN ALL EXPENSES
+        LIMPAR TODAS AS DESPESAS
       </h4>
 
-      <div className="flex justify-evenly mx-12 my-4">
+      <div className="flex justify-evenly mx-12 mt-1">
         <ButtonCLEAN />
         <ButtonBACK />
       </div>
