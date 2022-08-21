@@ -14,15 +14,20 @@ function Header() {
   return (
     <div>
 
-      <h1 className=" italic text-white bg-purple-600 border-b border-yellow-800 flex justify-center items-center px-6 py-4 text-lg font-bold "
-      > JOY EXPENSES
-      </h1>
+      <div>
+        <h1 className=" italic text-white bg-purple-600 border-b border-yellow-800 flex justify-center items-center px-6 py-4 text-lg font-bold "
+        > JOY EXPENSES
+        </h1>
+      </div>
 
-      <div className=" flex justify-center items-center text-white bg-purple-600 border-b border-yellow-800  px-6 py-4 text-lg font-bold ">
+      <div className=" flex justify-center items-center text-white bg-purple-600 border-b border-yellow-800 py-4 text-lg font-bold ">
 
-        <h1 className=" px-4"> Despesa <br></br> Total: </h1>
+        <h1 className=" ">
+          <div className=" flex justify-start"> Despesa </div>
+          <div className=" flex justify-end"> Total: </div>
+        </h1>
 
-        <h1 className=" px-4 py-1">
+        <h1 className=" pl-10 py-1">
           {totalBrFormat}
         </h1>
 
