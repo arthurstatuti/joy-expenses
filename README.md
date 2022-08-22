@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Bem-vindes, bem-vindas e bem-vindos ao meu primeiro projeto pessoal, o JoyExpenses!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Adoro viajar! E um problema que sempre tive foi manter as minhas despesas organizadas, principalmente quando viajo para fora do Brasil. Porém, com o JoyExpenses, eu guardo todas as minhas despesas num lugar só, e, quando viajo para fora, posso anotar a despesa na sua moeda original que o JoyExpenses converte a despesa para Real automaticamente. Isso é possível devido à consulta a uma API que atualiza as taxas de câmbio todos os dias (https://economia.awesomeapi.com.br/json/all).
 
-## Available Scripts
+As seguintes moedas estão disponíveis: <br/>
+ARS : Peso Argentino <br/>
+AUD : Dólar Australiano <br/>
+BRL : Real Brasileiro <br/>
+CAD : Dólar Canadense <br/>
+CHF : Franco Suíço <br/>
+CNY : Yuan Chinês <br/>
+EUR : Euro <br/>
+GBP : Libra Esterlina <br/>
+ILS : Novo Shekel Israelense <br/>
+JPY : Iene Japonês <br/>
+USD : Dólar Americano <br/>
 
-In the project directory, you can run:
+Você pode ver a aplicação rodando no link: https://joyexpenses.herokuapp.com/
 
-### `npm start`
+Desenvolvida em React.js, com Hooks e ContextAPI. Estilizado com TailwindCSS.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Para rodar a aplicação no teu computador:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+No Terminal:
 
-### `npm test`
+1. Clone o repositório: <br/>
+  git clone git@github.com:luizcasimiro/Joy-Expenses.git (para SSH) <br/>
+  OU <br/>
+  git clone https://github.com/luizcasimiro/Joy-Expenses.git (para HTTPS) <br/>
+2. Entre na pasta que você acaba de clonar: <br/>
+  cd Joy-Expenses <br/>  
+3. Instale as dependências: <br/>
+  npm install <br/>
+4. Inicie a aplicação: <br/>
+ npm start <br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Fluxo da aplicação:
 
-### `npm run build`
+![image](https://user-images.githubusercontent.com/82236658/185875254-bdfcb34c-0370-46d4-a3c7-4a2c9b5062d4.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://user-images.githubusercontent.com/82236658/185875518-5fb1223a-a8ce-42d5-b5a3-57336d031951.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![image](https://user-images.githubusercontent.com/82236658/185875795-be143c59-294a-4d4b-99b1-a6aea0f91999.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![image](https://user-images.githubusercontent.com/82236658/185875850-5bba0d53-1d4a-489c-a5ec-c067fab2f34a.png)
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![image](https://user-images.githubusercontent.com/82236658/185875908-65f990ae-f222-4361-b86b-da64061943e0.png)
