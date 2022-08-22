@@ -71,7 +71,7 @@ function ButtonSAVE() {
   return (
     <div>
       <button
-        className=" bg-lime-500 hover:bg-yellow-700 hover:text-white border border-yellow-800 rounded-xl py-5 px-5 md:px-10 font-bold hover:cursor-pointer shadow-sm hover:shadow-md transition ease-out duration-100 flex justify-center"
+        className=" bg-lime-500 enabled:hover:bg-yellow-700 enabled:hover:text-white border border-yellow-800 rounded-xl py-5 px-5 md:px-10 font-bold hover:cursor-pointer shadow-sm hover:shadow-md transition ease-out duration-100 flex justify-center disabled:opacity-30 disabled:cursor-not-allowed"
         id="button-save"
         type="button"
         disabled={disabled}
