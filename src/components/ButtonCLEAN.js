@@ -10,6 +10,7 @@ function ButtonCLEAN() {
     setDisabled(true);
     alert('Você não possui mais depesas!');
   }
+  
   useEffect(() => {
     if (expenses.length !== 0) {
       setDisabled(false);
