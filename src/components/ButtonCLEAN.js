@@ -24,7 +24,7 @@ function ButtonCLEAN() {
   return (
     <div>
       <button
-        className=" bg-red-400 hover:bg-yellow-700 hover:text-white border border-yellow-800 rounded-xl py-5 px-4 md:px-8 font-bold hover:cursor-pointer shadow-sm hover:shadow-md transition ease-out duration-100 flex justify-center"
+        className=" bg-red-400 enabled:hover:bg-yellow-700 enabled:hover:text-white border border-yellow-800 rounded-xl py-5 px-5 md:px-10 font-bold hover:cursor-pointer shadow-sm hover:shadow-md transition ease-out duration-100 flex justify-center disabled:opacity-25 disabled:cursor-not-allowed"
         id="button-clean"
         type="button"
         disabled={disabled}
