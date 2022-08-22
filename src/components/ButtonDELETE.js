@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import TravelContext from "../context/TravelContext";
 
 function ButtonDELETE() {
-  const [disabled, setDisabled] = useState(true);
+  const [disabled, setDisabled] = useState(false);
   const { detailedExpense, expenses, setExpenses } = useContext(TravelContext);
 
   function handleDELETE() {
@@ -12,13 +12,6 @@ function ButtonDELETE() {
     setDisabled(true);
     alert('Despesa excluída com sucesso!');
   }
-
-  useEffect(() => {
-    if (expenses.length !== 0) {
-      setDisabled(false);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   useEffect(() => {
     localStorage.setItem('expenses', JSON.stringify(expenses));
