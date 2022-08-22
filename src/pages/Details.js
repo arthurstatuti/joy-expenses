@@ -23,7 +23,7 @@ function Details() {
 
         <h2 className="bg-gray-100 border-b border-yellow-800 flex justify-center p-4 font-bold"> EXPENSE DETAILS </h2>
 
-        <h2 className="flex justify-center font-bold text-lg mt-20 mb-16"> NO EXPENSE SELECTED </h2>
+        <h2 className="flex justify-center font-bold text-lg mt-20 mb-16"> NENHUMA DESPESA SELECIONADA </h2>
 
         <div className="flex justify-evenly mx-12 my-4">
           <ButtonBACK />

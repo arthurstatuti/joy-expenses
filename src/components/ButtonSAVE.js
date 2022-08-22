@@ -48,7 +48,7 @@ function ButtonSAVE() {
     document.getElementById("price").value = "";
     document.getElementById("currency").value = "";
 
-    alert('Despesa salva com sucesso!');
+    alert('DESPESA SALVA COM SUCESSO!');
   }
 
   function toggleButtonSAVE() {

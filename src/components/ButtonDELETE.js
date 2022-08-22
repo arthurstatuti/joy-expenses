@@ -10,7 +10,7 @@ function ButtonDELETE() {
     const newExpenses = expenses.filter(expense => expense.id !== detailedExpense.id);
     setExpenses(newExpenses);
     setDisabled(true);
-    alert('Despesa excluída com sucesso!');
+    alert('DESPESA EXCLUÍDA COM SUCESSO!');
   }
 
   useEffect(() => {

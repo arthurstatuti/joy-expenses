@@ -8,7 +8,7 @@ function ButtonCLEAN() {
   function handleCLEAN() {
     setExpenses([])
     setDisabled(true);
-    alert('Você não possui mais depesas!');
+    alert('VOCÊ NÃO POSSUI MAIS DESPESAS!');
   }
   
   useEffect(() => {
