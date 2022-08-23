@@ -1,6 +1,6 @@
 # Bem-vindes, bem-vindas e bem-vindos ao meu primeiro projeto pessoal, o JoyExpenses!
 
-Adoro viajar! E um problema que sempre tive foi manter as minhas despesas organizadas, principalmente quando viajo para fora do Brasil. Porém, com o JoyExpenses, eu guardo todas as minhas despesas num lugar só, e, quando viajo para fora, posso anotar a despesa na sua moeda original que o JoyExpenses converte a despesa para Real automaticamente. Isso é possível devido à consulta a uma API que atualiza as taxas de câmbio todos os dias (https://economia.awesomeapi.com.br/json/all).
+Adoro viajar! E um problema que sempre tive foi manter as minhas despesas organizadas, principalmente quando viajo para fora do Brasil. Porém, com o JoyExpenses, eu guardo todas as minhas despesas num lugar só. Além disso, posso anotar a despesa na sua moeda original que o JoyExpenses a converte automaticamente para Real. Isso é possível graças a uma API que atualiza as taxas de câmbio diariamente (https://economia.awesomeapi.com.br/json/all).
 
 As seguintes moedas estão disponíveis: <br/>
 ARS : Peso Argentino <br/>
@@ -24,9 +24,15 @@ Desenvolvida em React.js, com Hooks e ContextAPI. Estilizado com TailwindCSS.
 No Terminal:
 
 1. Clone o repositório: <br/>
-  git clone git@github.com:luizcasimiro/Joy-Expenses.git (para SSH) <br/>
-  OU <br/>
-  git clone https://github.com/luizcasimiro/Joy-Expenses.git (para HTTPS) <br/>
+
+        SSH:
+        git clone git@github.com:luizcasimiro/Joy-Expenses.git 
+
+        OU 
+
+        HTTPS:
+        git clone https://github.com/luizcasimiro/Joy-Expenses.git
+  
 2. Entre na pasta que você acaba de clonar: <br/>
   cd Joy-Expenses <br/>  
 3. Instale as dependências: <br/>
