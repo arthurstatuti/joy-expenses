@@ -1,11 +1,12 @@
-import React, { useContext } from "react";
+import React, { useEffect, useContext } from "react";
 import Header from "../components/Header";
 import ButtonSAVE from "../components/ButtonSAVE";
 import ButtonBACK from "../components/ButtonBACK";
 import TravelContext from "../context/TravelContext";
 
-function Add() {
+function New() {
   const {
+    getCurrenciesData,
     currenciesData,
     setWhat,
     setWhere,
@@ -18,7 +19,7 @@ function Add() {
   function setCurrencyAndSetRate({ target: { value } }) {
     if (value === '') {
       setCurrency("");
-      setRate("rate");
+      setRate(0);
     } else if (value === "BRL") {
       setCurrency("BRL");
       setRate(1);
@@ -28,6 +29,15 @@ function Add() {
       setRate(rate);
     }
   }
+
+  useEffect(() => {
+    getCurrenciesData();
+    // eslint-disable-next-line
+  }, []);
+
+  // useEffect(() => {
+  //   console.log(currenciesData);
+  // }, [currenciesData]);
 
   if (currenciesData.length === 0) {
     return (
@@ -133,4 +143,4 @@ function Add() {
   }
 }
 
-export default Add;
+export default New;

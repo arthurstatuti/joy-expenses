@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import PropTypes from 'prop-types';
 import fetchCurrenciesData from '../api/CurrenciesDataApi';
 import TravelContext from "./TravelContext";
@@ -18,15 +18,6 @@ function TravelProvider({ children }) {
     const currenciesData = await fetchCurrenciesData();
     setCurrenciesData(currenciesData);
   }
-
-  useEffect(() => {
-    getCurrenciesData();
-    // eslint-disable-next-line
-  }, []);
-
-  useEffect(() => {
-    console.log(currenciesData);
-  }, [currenciesData]);
 
   const contextValue = {
     getCurrenciesData,
