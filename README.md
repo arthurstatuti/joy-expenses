@@ -1,6 +1,8 @@
 # Bem-vindes, bem-vindas e bem-vindos ao meu primeiro projeto pessoal, o JoyExpenses!
 
-Adoro viajar! E um problema que sempre tive foi manter as minhas despesas organizadas, principalmente quando viajo para fora do Brasil. Porém, com o JoyExpenses, eu guardo todas as minhas despesas num lugar só. Além disso, posso anotar a despesa na sua moeda original que o JoyExpenses a converte automaticamente para Real. Isso é possível graças a uma API que atualiza as taxas de câmbio diariamente (https://economia.awesomeapi.com.br/json/all).
+Adoro viajar! E um problema que sempre tive foi manter as minhas despesas organizadas, principalmente quando viajo para fora do Brasil. Porém, com o JoyExpenses, eu guardo todas as minhas despesas num lugar só. Além disso, posso anotar uma despesa na sua moeda original que o JoyExpenses a converte automaticamente para Real. 
+
+Isto só é possível graças a uma API que atualiza as taxas de câmbio diariamente (https://economia.awesomeapi.com.br/json/all).
 
 As seguintes moedas estão disponíveis: <br/>
 ARS : Peso Argentino <br/>
@@ -19,26 +21,33 @@ Você pode ver a aplicação rodando no link: https://joyexpenses.herokuapp.com/
 
 Desenvolvida em React.js, com Hooks e ContextAPI. Estilizado com TailwindCSS.
 
-## Para rodar a aplicação no teu computador:
+## Para rodar a aplicação no seu computador:
 
 No Terminal:
 
-1. Clone o repositório: <br/>
+1. Clone o repositório:
 
-        SSH:
-        git clone git@github.com:luizcasimiro/Joy-Expenses.git 
+```bash
+   git clone git@github.com:luizcasimiro/Joy-Expenses.git
+```
+ 
+2. Entre na pasta que você acabou de clonar:
 
-        OU 
+```bash
+    cd joy-expenses
+```
 
-        HTTPS:
-        git clone https://github.com/luizcasimiro/Joy-Expenses.git
+3. Instale as dependências:
+
+```bash
+    npm install
+```
   
-2. Entre na pasta que você acaba de clonar: <br/>
-  cd Joy-Expenses <br/>  
-3. Instale as dependências: <br/>
-  npm install <br/>
-4. Inicie a aplicação: <br/>
- npm start <br/>
+4. Inicie a aplicação:
+
+```bash
+    npm start
+```
 
 ## Fluxo da aplicação:
 
