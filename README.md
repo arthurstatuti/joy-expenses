@@ -17,7 +17,11 @@ ILS : Novo Shekel Israelense <br/>
 JPY : Iene Japonês <br/>
 USD : Dólar Americano <br/>
 
-Você pode ver a aplicação rodando no link: https://joyexpenses.herokuapp.com/
+Você pode ver a aplicação rodando no link: 
+
+```bash
+   https://joy-expenses.vercel.app/
+```
 
 Desenvolvida em React.js, com Hooks e ContextAPI. Estilizado com TailwindCSS.
 
