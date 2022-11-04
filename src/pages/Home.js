@@ -35,7 +35,7 @@ function Home() {
           </div>
 
           <h3 className=" flex justify-center m-10">
-            <p >Você ainda não possui despesas. Clique em <strong>NOVA DESPESA</strong>  para começar.</p>
+            <p >Clique em <strong>NOVA DESPESA</strong>  para começar.</p>
           </h3>
 
         </main >
