@@ -2,7 +2,7 @@ Adoro viajar! E um problema que sempre tive foi manter as minhas despesas organi
 
 Porém, com o JoyExpenses, eu guardo todas as minhas despesas num lugar só. 
 
-Eu salvo a despesa em sua moeda original, e o JoyExpenses a converte para Real para mim. 
+Eu salvo a despesa em sua moeda original, e o JoyExpenses a converte em Real para mim. 
 
 Isto só é possível graças a uma API que atualiza as taxas de câmbio diariamente (https://economia.awesomeapi.com.br/json/all).
 
