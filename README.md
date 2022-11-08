@@ -1,6 +1,8 @@
-# Bem-vindes, bem-vindas e bem-vindos ao meu primeiro projeto pessoal, o JoyExpenses!
+Adoro viajar! E um problema que sempre tive foi manter as minhas despesas organizadas.
 
-Adoro viajar! E um problema que sempre tive foi manter as minhas despesas organizadas, principalmente quando viajo para fora do Brasil. Porém, com o JoyExpenses, eu guardo todas as minhas despesas num lugar só. Além disso, posso anotar uma despesa na sua moeda original que o JoyExpenses a converte automaticamente para Real. 
+Porém, com o JoyExpenses, eu guardo todas as minhas despesas num lugar só. 
+
+Eu salvo a despesa em sua moeda original, e o JoyExpenses a converte para Real para mim. 
 
 Isto só é possível graças a uma API que atualiza as taxas de câmbio diariamente (https://economia.awesomeapi.com.br/json/all).
 
@@ -23,7 +25,7 @@ Você pode ver a aplicação rodando no link:
    https://joy-expenses.vercel.app/
 ```
 
-Desenvolvida em React.js, com Hooks e ContextAPI. Estilizado com TailwindCSS.
+Aplicação desenvolvida com React.js, React Hooks, e ContextAPI. Estilizada com TailwindCSS.
 
 ## Para rodar a aplicação no seu computador:
 
